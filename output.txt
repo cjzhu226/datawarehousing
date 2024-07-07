@@ -1,0 +1,2521 @@
+Last login: Sun Jul  7 09:52:39 on ttys001
+cooperzhu@Coopers-MacBook-Air ~ % python3 -m venv env
+cooperzhu@Coopers-MacBook-Air ~ % source env/bin/activate
+(env) cooperzhu@Coopers-MacBook-Air ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+==> The following existing directories will be made group writable:
+/usr/local/bin
+==> The following existing directories will have their owner set to cooperzhu:
+/usr/local/bin
+==> The following existing directories will have their group set to admin:
+/usr/local/bin
+==> The following new directories will be created:
+/usr/local/etc
+/usr/local/include
+/usr/local/lib
+/usr/local/sbin
+/usr/local/share
+/usr/local/var
+/usr/local/opt
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+/usr/local/var/homebrew
+/usr/local/var/homebrew/linked
+/usr/local/Cellar
+/usr/local/Caskroom
+/usr/local/Frameworks
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /bin/chmod u+rwx /usr/local/bin
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin
+==> /usr/bin/sudo /usr/sbin/chown cooperzhu /usr/local/bin
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /usr/local/share/zsh /usr/local/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown cooperzhu /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R cooperzhu:admin /usr/local/Homebrew
+==> /usr/bin/sudo /bin/mkdir -p /Users/cooperzhu/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/cooperzhu/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R cooperzhu /Users/cooperzhu/Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 272974, done.
+remote: Counting objects: 100% (690/690), done.
+remote: Compressing objects: 100% (370/370), done.
+remote: Total 272974 (delta 347), reused 617 (delta 307), pack-reused 272284
+Receiving objects: 100% (272974/272974), 82.73 MiB | 2.66 MiB/s, done.
+Resolving deltas: 100% (196532/196532), done.
+From https://github.com/Homebrew/brew
+ * [new branch]            cask-install-receipt -> origin/cask-install-receipt
+ * [new branch]            load-internal-cask-json-v3 -> origin/load-internal-cask-json-v3
+ * [new branch]            master               -> origin/master
+ * [new branch]            pr/17636             -> origin/pr/17636
+ * [new branch]            sorbet-strict-public-apis -> origin/sorbet-strict-public-apis
+ * [new branch]            srb-strict-utils     -> origin/srb-strict-utils
+ * [new tag]               0.1                  -> 0.1
+ * [new tag]               0.2                  -> 0.2
+ * [new tag]               0.3                  -> 0.3
+ * [new tag]               0.4                  -> 0.4
+ * [new tag]               0.5                  -> 0.5
+ * [new tag]               0.6                  -> 0.6
+ * [new tag]               0.7                  -> 0.7
+ * [new tag]               0.7.1                -> 0.7.1
+ * [new tag]               0.8                  -> 0.8
+ * [new tag]               0.8.1                -> 0.8.1
+ * [new tag]               0.9                  -> 0.9
+ * [new tag]               0.9.1                -> 0.9.1
+ * [new tag]               0.9.2                -> 0.9.2
+ * [new tag]               0.9.3                -> 0.9.3
+ * [new tag]               0.9.4                -> 0.9.4
+ * [new tag]               0.9.5                -> 0.9.5
+ * [new tag]               0.9.8                -> 0.9.8
+ * [new tag]               0.9.9                -> 0.9.9
+ * [new tag]               1.0.0                -> 1.0.0
+ * [new tag]               1.0.1                -> 1.0.1
+ * [new tag]               1.0.2                -> 1.0.2
+ * [new tag]               1.0.3                -> 1.0.3
+ * [new tag]               1.0.4                -> 1.0.4
+ * [new tag]               1.0.5                -> 1.0.5
+ * [new tag]               1.0.6                -> 1.0.6
+ * [new tag]               1.0.7                -> 1.0.7
+ * [new tag]               1.0.8                -> 1.0.8
+ * [new tag]               1.0.9                -> 1.0.9
+ * [new tag]               1.1.0                -> 1.1.0
+ * [new tag]               1.1.1                -> 1.1.1
+ * [new tag]               1.1.10               -> 1.1.10
+ * [new tag]               1.1.11               -> 1.1.11
+ * [new tag]               1.1.12               -> 1.1.12
+ * [new tag]               1.1.13               -> 1.1.13
+ * [new tag]               1.1.2                -> 1.1.2
+ * [new tag]               1.1.3                -> 1.1.3
+ * [new tag]               1.1.4                -> 1.1.4
+ * [new tag]               1.1.5                -> 1.1.5
+ * [new tag]               1.1.6                -> 1.1.6
+ * [new tag]               1.1.7                -> 1.1.7
+ * [new tag]               1.1.8                -> 1.1.8
+ * [new tag]               1.1.9                -> 1.1.9
+ * [new tag]               1.2.0                -> 1.2.0
+ * [new tag]               1.2.1                -> 1.2.1
+ * [new tag]               1.2.2                -> 1.2.2
+ * [new tag]               1.2.3                -> 1.2.3
+ * [new tag]               1.2.4                -> 1.2.4
+ * [new tag]               1.2.5                -> 1.2.5
+ * [new tag]               1.2.6                -> 1.2.6
+ * [new tag]               1.3.0                -> 1.3.0
+ * [new tag]               1.3.1                -> 1.3.1
+ * [new tag]               1.3.2                -> 1.3.2
+ * [new tag]               1.3.3                -> 1.3.3
+ * [new tag]               1.3.4                -> 1.3.4
+ * [new tag]               1.3.5                -> 1.3.5
+ * [new tag]               1.3.6                -> 1.3.6
+ * [new tag]               1.3.7                -> 1.3.7
+ * [new tag]               1.3.8                -> 1.3.8
+ * [new tag]               1.3.9                -> 1.3.9
+ * [new tag]               1.4.0                -> 1.4.0
+ * [new tag]               1.4.1                -> 1.4.1
+ * [new tag]               1.4.2                -> 1.4.2
+ * [new tag]               1.4.3                -> 1.4.3
+ * [new tag]               1.5.0                -> 1.5.0
+ * [new tag]               1.5.1                -> 1.5.1
+ * [new tag]               1.5.10               -> 1.5.10
+ * [new tag]               1.5.11               -> 1.5.11
+ * [new tag]               1.5.12               -> 1.5.12
+ * [new tag]               1.5.13               -> 1.5.13
+ * [new tag]               1.5.14               -> 1.5.14
+ * [new tag]               1.5.2                -> 1.5.2
+ * [new tag]               1.5.3                -> 1.5.3
+ * [new tag]               1.5.4                -> 1.5.4
+ * [new tag]               1.5.5                -> 1.5.5
+ * [new tag]               1.5.6                -> 1.5.6
+ * [new tag]               1.5.7                -> 1.5.7
+ * [new tag]               1.5.8                -> 1.5.8
+ * [new tag]               1.5.9                -> 1.5.9
+ * [new tag]               1.6.0                -> 1.6.0
+ * [new tag]               1.6.1                -> 1.6.1
+ * [new tag]               1.6.10               -> 1.6.10
+ * [new tag]               1.6.11               -> 1.6.11
+ * [new tag]               1.6.12               -> 1.6.12
+ * [new tag]               1.6.13               -> 1.6.13
+ * [new tag]               1.6.14               -> 1.6.14
+ * [new tag]               1.6.15               -> 1.6.15
+ * [new tag]               1.6.16               -> 1.6.16
+ * [new tag]               1.6.17               -> 1.6.17
+ * [new tag]               1.6.2                -> 1.6.2
+ * [new tag]               1.6.3                -> 1.6.3
+ * [new tag]               1.6.4                -> 1.6.4
+ * [new tag]               1.6.5                -> 1.6.5
+ * [new tag]               1.6.6                -> 1.6.6
+ * [new tag]               1.6.7                -> 1.6.7
+ * [new tag]               1.6.8                -> 1.6.8
+ * [new tag]               1.6.9                -> 1.6.9
+ * [new tag]               1.7.0                -> 1.7.0
+ * [new tag]               1.7.1                -> 1.7.1
+ * [new tag]               1.7.2                -> 1.7.2
+ * [new tag]               1.7.3                -> 1.7.3
+ * [new tag]               1.7.4                -> 1.7.4
+ * [new tag]               1.7.5                -> 1.7.5
+ * [new tag]               1.7.6                -> 1.7.6
+ * [new tag]               1.7.7                -> 1.7.7
+ * [new tag]               1.8.0                -> 1.8.0
+ * [new tag]               1.8.1                -> 1.8.1
+ * [new tag]               1.8.2                -> 1.8.2
+ * [new tag]               1.8.3                -> 1.8.3
+ * [new tag]               1.8.4                -> 1.8.4
+ * [new tag]               1.8.5                -> 1.8.5
+ * [new tag]               1.8.6                -> 1.8.6
+ * [new tag]               1.9.0                -> 1.9.0
+ * [new tag]               1.9.1                -> 1.9.1
+ * [new tag]               1.9.2                -> 1.9.2
+ * [new tag]               1.9.3                -> 1.9.3
+ * [new tag]               2.0.0                -> 2.0.0
+ * [new tag]               2.0.1                -> 2.0.1
+ * [new tag]               2.0.2                -> 2.0.2
+ * [new tag]               2.0.3                -> 2.0.3
+ * [new tag]               2.0.4                -> 2.0.4
+ * [new tag]               2.0.5                -> 2.0.5
+ * [new tag]               2.0.6                -> 2.0.6
+ * [new tag]               2.1.0                -> 2.1.0
+ * [new tag]               2.1.1                -> 2.1.1
+ * [new tag]               2.1.10               -> 2.1.10
+ * [new tag]               2.1.11               -> 2.1.11
+ * [new tag]               2.1.12               -> 2.1.12
+ * [new tag]               2.1.13               -> 2.1.13
+ * [new tag]               2.1.14               -> 2.1.14
+ * [new tag]               2.1.15               -> 2.1.15
+ * [new tag]               2.1.16               -> 2.1.16
+ * [new tag]               2.1.2                -> 2.1.2
+ * [new tag]               2.1.3                -> 2.1.3
+ * [new tag]               2.1.4                -> 2.1.4
+ * [new tag]               2.1.5                -> 2.1.5
+ * [new tag]               2.1.6                -> 2.1.6
+ * [new tag]               2.1.7                -> 2.1.7
+ * [new tag]               2.1.8                -> 2.1.8
+ * [new tag]               2.1.9                -> 2.1.9
+ * [new tag]               2.2.0                -> 2.2.0
+ * [new tag]               2.2.1                -> 2.2.1
+ * [new tag]               2.2.10               -> 2.2.10
+ * [new tag]               2.2.11               -> 2.2.11
+ * [new tag]               2.2.12               -> 2.2.12
+ * [new tag]               2.2.13               -> 2.2.13
+ * [new tag]               2.2.14               -> 2.2.14
+ * [new tag]               2.2.15               -> 2.2.15
+ * [new tag]               2.2.16               -> 2.2.16
+ * [new tag]               2.2.17               -> 2.2.17
+ * [new tag]               2.2.2                -> 2.2.2
+ * [new tag]               2.2.3                -> 2.2.3
+ * [new tag]               2.2.4                -> 2.2.4
+ * [new tag]               2.2.5                -> 2.2.5
+ * [new tag]               2.2.6                -> 2.2.6
+ * [new tag]               2.2.7                -> 2.2.7
+ * [new tag]               2.2.8                -> 2.2.8
+ * [new tag]               2.2.9                -> 2.2.9
+ * [new tag]               2.3.0                -> 2.3.0
+ * [new tag]               2.4.0                -> 2.4.0
+ * [new tag]               2.4.1                -> 2.4.1
+ * [new tag]               2.4.10               -> 2.4.10
+ * [new tag]               2.4.11               -> 2.4.11
+ * [new tag]               2.4.12               -> 2.4.12
+ * [new tag]               2.4.13               -> 2.4.13
+ * [new tag]               2.4.14               -> 2.4.14
+ * [new tag]               2.4.15               -> 2.4.15
+ * [new tag]               2.4.16               -> 2.4.16
+ * [new tag]               2.4.2                -> 2.4.2
+ * [new tag]               2.4.3                -> 2.4.3
+ * [new tag]               2.4.4                -> 2.4.4
+ * [new tag]               2.4.5                -> 2.4.5
+ * [new tag]               2.4.6                -> 2.4.6
+ * [new tag]               2.4.7                -> 2.4.7
+ * [new tag]               2.4.8                -> 2.4.8
+ * [new tag]               2.4.9                -> 2.4.9
+ * [new tag]               2.5.0                -> 2.5.0
+ * [new tag]               2.5.1                -> 2.5.1
+ * [new tag]               2.5.10               -> 2.5.10
+ * [new tag]               2.5.11               -> 2.5.11
+ * [new tag]               2.5.12               -> 2.5.12
+ * [new tag]               2.5.2                -> 2.5.2
+ * [new tag]               2.5.3                -> 2.5.3
+ * [new tag]               2.5.4                -> 2.5.4
+ * [new tag]               2.5.5                -> 2.5.5
+ * [new tag]               2.5.6                -> 2.5.6
+ * [new tag]               2.5.7                -> 2.5.7
+ * [new tag]               2.5.8                -> 2.5.8
+ * [new tag]               2.5.9                -> 2.5.9
+ * [new tag]               2.6.0                -> 2.6.0
+ * [new tag]               2.6.1                -> 2.6.1
+ * [new tag]               2.6.2                -> 2.6.2
+ * [new tag]               2.7.0                -> 2.7.0
+ * [new tag]               2.7.1                -> 2.7.1
+ * [new tag]               2.7.2                -> 2.7.2
+ * [new tag]               2.7.3                -> 2.7.3
+ * [new tag]               2.7.4                -> 2.7.4
+ * [new tag]               2.7.5                -> 2.7.5
+ * [new tag]               2.7.6                -> 2.7.6
+ * [new tag]               2.7.7                -> 2.7.7
+ * [new tag]               3.0.0                -> 3.0.0
+ * [new tag]               3.0.1                -> 3.0.1
+ * [new tag]               3.0.10               -> 3.0.10
+ * [new tag]               3.0.11               -> 3.0.11
+ * [new tag]               3.0.2                -> 3.0.2
+ * [new tag]               3.0.3                -> 3.0.3
+ * [new tag]               3.0.4                -> 3.0.4
+ * [new tag]               3.0.5                -> 3.0.5
+ * [new tag]               3.0.6                -> 3.0.6
+ * [new tag]               3.0.7                -> 3.0.7
+ * [new tag]               3.0.8                -> 3.0.8
+ * [new tag]               3.0.9                -> 3.0.9
+ * [new tag]               3.1.0                -> 3.1.0
+ * [new tag]               3.1.1                -> 3.1.1
+ * [new tag]               3.1.10               -> 3.1.10
+ * [new tag]               3.1.11               -> 3.1.11
+ * [new tag]               3.1.12               -> 3.1.12
+ * [new tag]               3.1.2                -> 3.1.2
+ * [new tag]               3.1.3                -> 3.1.3
+ * [new tag]               3.1.4                -> 3.1.4
+ * [new tag]               3.1.5                -> 3.1.5
+ * [new tag]               3.1.6                -> 3.1.6
+ * [new tag]               3.1.7                -> 3.1.7
+ * [new tag]               3.1.8                -> 3.1.8
+ * [new tag]               3.1.9                -> 3.1.9
+ * [new tag]               3.2.0                -> 3.2.0
+ * [new tag]               3.2.1                -> 3.2.1
+ * [new tag]               3.2.10               -> 3.2.10
+ * [new tag]               3.2.11               -> 3.2.11
+ * [new tag]               3.2.12               -> 3.2.12
+ * [new tag]               3.2.13               -> 3.2.13
+ * [new tag]               3.2.14               -> 3.2.14
+ * [new tag]               3.2.15               -> 3.2.15
+ * [new tag]               3.2.16               -> 3.2.16
+ * [new tag]               3.2.17               -> 3.2.17
+ * [new tag]               3.2.2                -> 3.2.2
+ * [new tag]               3.2.3                -> 3.2.3
+ * [new tag]               3.2.4                -> 3.2.4
+ * [new tag]               3.2.5                -> 3.2.5
+ * [new tag]               3.2.6                -> 3.2.6
+ * [new tag]               3.2.7                -> 3.2.7
+ * [new tag]               3.2.8                -> 3.2.8
+ * [new tag]               3.2.9                -> 3.2.9
+ * [new tag]               3.3.0                -> 3.3.0
+ * [new tag]               3.3.1                -> 3.3.1
+ * [new tag]               3.3.10               -> 3.3.10
+ * [new tag]               3.3.11               -> 3.3.11
+ * [new tag]               3.3.12               -> 3.3.12
+ * [new tag]               3.3.13               -> 3.3.13
+ * [new tag]               3.3.14               -> 3.3.14
+ * [new tag]               3.3.15               -> 3.3.15
+ * [new tag]               3.3.16               -> 3.3.16
+ * [new tag]               3.3.2                -> 3.3.2
+ * [new tag]               3.3.3                -> 3.3.3
+ * [new tag]               3.3.4                -> 3.3.4
+ * [new tag]               3.3.5                -> 3.3.5
+ * [new tag]               3.3.6                -> 3.3.6
+ * [new tag]               3.3.7                -> 3.3.7
+ * [new tag]               3.3.8                -> 3.3.8
+ * [new tag]               3.3.9                -> 3.3.9
+ * [new tag]               3.4.0                -> 3.4.0
+ * [new tag]               3.4.1                -> 3.4.1
+ * [new tag]               3.4.10               -> 3.4.10
+ * [new tag]               3.4.11               -> 3.4.11
+ * [new tag]               3.4.2                -> 3.4.2
+ * [new tag]               3.4.3                -> 3.4.3
+ * [new tag]               3.4.4                -> 3.4.4
+ * [new tag]               3.4.5                -> 3.4.5
+ * [new tag]               3.4.6                -> 3.4.6
+ * [new tag]               3.4.7                -> 3.4.7
+ * [new tag]               3.4.8                -> 3.4.8
+ * [new tag]               3.4.9                -> 3.4.9
+ * [new tag]               3.5.0                -> 3.5.0
+ * [new tag]               3.5.1                -> 3.5.1
+ * [new tag]               3.5.10               -> 3.5.10
+ * [new tag]               3.5.2                -> 3.5.2
+ * [new tag]               3.5.3                -> 3.5.3
+ * [new tag]               3.5.4                -> 3.5.4
+ * [new tag]               3.5.5                -> 3.5.5
+ * [new tag]               3.5.6                -> 3.5.6
+ * [new tag]               3.5.7                -> 3.5.7
+ * [new tag]               3.5.8                -> 3.5.8
+ * [new tag]               3.5.9                -> 3.5.9
+ * [new tag]               3.6.0                -> 3.6.0
+ * [new tag]               3.6.1                -> 3.6.1
+ * [new tag]               3.6.10               -> 3.6.10
+ * [new tag]               3.6.11               -> 3.6.11
+ * [new tag]               3.6.12               -> 3.6.12
+ * [new tag]               3.6.13               -> 3.6.13
+ * [new tag]               3.6.14               -> 3.6.14
+ * [new tag]               3.6.15               -> 3.6.15
+ * [new tag]               3.6.16               -> 3.6.16
+ * [new tag]               3.6.17               -> 3.6.17
+ * [new tag]               3.6.18               -> 3.6.18
+ * [new tag]               3.6.19               -> 3.6.19
+ * [new tag]               3.6.2                -> 3.6.2
+ * [new tag]               3.6.20               -> 3.6.20
+ * [new tag]               3.6.21               -> 3.6.21
+ * [new tag]               3.6.3                -> 3.6.3
+ * [new tag]               3.6.4                -> 3.6.4
+ * [new tag]               3.6.5                -> 3.6.5
+ * [new tag]               3.6.6                -> 3.6.6
+ * [new tag]               3.6.7                -> 3.6.7
+ * [new tag]               3.6.8                -> 3.6.8
+ * [new tag]               3.6.9                -> 3.6.9
+ * [new tag]               4.0.0                -> 4.0.0
+ * [new tag]               4.0.1                -> 4.0.1
+ * [new tag]               4.0.10               -> 4.0.10
+ * [new tag]               4.0.11               -> 4.0.11
+ * [new tag]               4.0.12               -> 4.0.12
+ * [new tag]               4.0.13               -> 4.0.13
+ * [new tag]               4.0.14               -> 4.0.14
+ * [new tag]               4.0.15               -> 4.0.15
+ * [new tag]               4.0.16               -> 4.0.16
+ * [new tag]               4.0.17               -> 4.0.17
+ * [new tag]               4.0.18               -> 4.0.18
+ * [new tag]               4.0.19               -> 4.0.19
+ * [new tag]               4.0.2                -> 4.0.2
+ * [new tag]               4.0.20               -> 4.0.20
+ * [new tag]               4.0.21               -> 4.0.21
+ * [new tag]               4.0.22               -> 4.0.22
+ * [new tag]               4.0.23               -> 4.0.23
+ * [new tag]               4.0.24               -> 4.0.24
+ * [new tag]               4.0.25               -> 4.0.25
+ * [new tag]               4.0.26               -> 4.0.26
+ * [new tag]               4.0.27               -> 4.0.27
+ * [new tag]               4.0.28               -> 4.0.28
+ * [new tag]               4.0.3                -> 4.0.3
+ * [new tag]               4.0.4                -> 4.0.4
+ * [new tag]               4.0.5                -> 4.0.5
+ * [new tag]               4.0.6                -> 4.0.6
+ * [new tag]               4.0.7                -> 4.0.7
+ * [new tag]               4.0.8                -> 4.0.8
+ * [new tag]               4.0.9                -> 4.0.9
+ * [new tag]               4.1.0                -> 4.1.0
+ * [new tag]               4.1.1                -> 4.1.1
+ * [new tag]               4.1.10               -> 4.1.10
+ * [new tag]               4.1.11               -> 4.1.11
+ * [new tag]               4.1.12               -> 4.1.12
+ * [new tag]               4.1.13               -> 4.1.13
+ * [new tag]               4.1.14               -> 4.1.14
+ * [new tag]               4.1.15               -> 4.1.15
+ * [new tag]               4.1.16               -> 4.1.16
+ * [new tag]               4.1.17               -> 4.1.17
+ * [new tag]               4.1.18               -> 4.1.18
+ * [new tag]               4.1.19               -> 4.1.19
+ * [new tag]               4.1.2                -> 4.1.2
+ * [new tag]               4.1.20               -> 4.1.20
+ * [new tag]               4.1.21               -> 4.1.21
+ * [new tag]               4.1.22               -> 4.1.22
+ * [new tag]               4.1.23               -> 4.1.23
+ * [new tag]               4.1.24               -> 4.1.24
+ * [new tag]               4.1.25               -> 4.1.25
+ * [new tag]               4.1.3                -> 4.1.3
+ * [new tag]               4.1.4                -> 4.1.4
+ * [new tag]               4.1.5                -> 4.1.5
+ * [new tag]               4.1.6                -> 4.1.6
+ * [new tag]               4.1.7                -> 4.1.7
+ * [new tag]               4.1.8                -> 4.1.8
+ * [new tag]               4.2.0                -> 4.2.0
+ * [new tag]               4.2.1                -> 4.2.1
+ * [new tag]               4.2.10               -> 4.2.10
+ * [new tag]               4.2.11               -> 4.2.11
+ * [new tag]               4.2.12               -> 4.2.12
+ * [new tag]               4.2.13               -> 4.2.13
+ * [new tag]               4.2.15               -> 4.2.15
+ * [new tag]               4.2.16               -> 4.2.16
+ * [new tag]               4.2.17               -> 4.2.17
+ * [new tag]               4.2.18               -> 4.2.18
+ * [new tag]               4.2.19               -> 4.2.19
+ * [new tag]               4.2.2                -> 4.2.2
+ * [new tag]               4.2.20               -> 4.2.20
+ * [new tag]               4.2.21               -> 4.2.21
+ * [new tag]               4.2.3                -> 4.2.3
+ * [new tag]               4.2.4                -> 4.2.4
+ * [new tag]               4.2.5                -> 4.2.5
+ * [new tag]               4.2.6                -> 4.2.6
+ * [new tag]               4.2.7                -> 4.2.7
+ * [new tag]               4.2.8                -> 4.2.8
+ * [new tag]               4.2.9                -> 4.2.9
+ * [new tag]               4.3.0                -> 4.3.0
+ * [new tag]               4.3.1                -> 4.3.1
+ * [new tag]               4.3.2                -> 4.3.2
+ * [new tag]               4.3.3                -> 4.3.3
+ * [new tag]               4.3.4                -> 4.3.4
+ * [new tag]               4.3.5                -> 4.3.5
+ * [new tag]               4.3.6                -> 4.3.6
+ * [new tag]               4.3.7                -> 4.3.7
+ * [new tag]               4.3.8                -> 4.3.8
+remote: Enumerating objects: 33, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Total 33 (delta 20), reused 20 (delta 20), pack-reused 13
+Unpacking objects: 100% (33/33), 5.60 KiB | 94.00 KiB/s, done.
+From https://github.com/Homebrew/brew
+ * [new tag]               4.0.29     -> 4.0.29
+ * [new tag]               4.1.9      -> 4.1.9
+ * [new tag]               4.2.14     -> 4.2.14
+Switched to a new branch 'stable'
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:a5ef040e054444a0eb2cbcc1032fed14702dfbe2e55b25e609f3ce643f23c4ee
+######################################################################### 100.0%
+==> Pouring portable-ruby-3.3.3.el_capitan.bottle.tar.gz
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/cooperzhu/.zprofile
+    eval "$(/usr/local/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % brew install awscli
+
+==> Downloading https://ghcr.io/v2/homebrew/core/awscli/manifests/2.17.9
+######################################################################### 100.0%
+==> Fetching dependencies for awscli: ca-certificates, openssl@3, mpdecimal, readline, sqlite, xz and python@3.11
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2024-
+######################################################################### 100.0%
+==> Fetching ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:73
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.3.1
+######################################################################### 100.0%
+==> Fetching openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:ec3aa180
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+######################################################################### 100.0%
+==> Fetching mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:377dc5e3
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.10
+######################################################################### 100.0%
+==> Fetching readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:9796e0ff1
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.46.0
+######################################################################### 100.0%
+==> Fetching sqlite
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f5991da95d0
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/manifests/5.4.6
+######################################################################### 100.0%
+==> Fetching xz
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:139fcf6d46fb85d
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.11/manifests/3.11.9
+######################################################################### 100.0%
+==> Fetching python@3.11
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.11/blobs/sha256:763930
+######################################################################### 100.0%
+==> Fetching awscli
+==> Downloading https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:bfdc11f8d3b
+######################################################################### 100.0%
+==> Installing dependencies for awscli: ca-certificates, openssl@3, mpdecimal, readline, sqlite, xz and python@3.11
+==> Installing awscli dependency: ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2024-
+Already downloaded: /Users/cooperzhu/Library/Caches/Homebrew/downloads/f1e786c502c23070efef1c7716aeaea181b28fd0cdbc5327d6d7c243b49e7700--ca-certificates-2024-07-02.bottle_manifest.json
+==> Pouring ca-certificates--2024-07-02.all.bottle.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /usr/local/Cellar/ca-certificates/2024-07-02: 4 files, 231.3KB
+==> Installing awscli dependency: openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.3.1
+Already downloaded: /Users/cooperzhu/Library/Caches/Homebrew/downloads/667f7ac7d51b399107e055b7908f1922fcabba24c7d9d22f2b2d90a07c7c079c--openssl@3-3.3.1.bottle_manifest.json
+==> Pouring openssl@3--3.3.1.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/openssl@3/3.3.1: 6,982 files, 32.8MB
+==> Installing awscli dependency: mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+Already downloaded: /Users/cooperzhu/Library/Caches/Homebrew/downloads/7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json
+==> Pouring mpdecimal--4.0.0.sonoma.bottle.1.tar.gz
+🍺  /usr/local/Cellar/mpdecimal/4.0.0: 22 files, 615.8KB
+==> Installing awscli dependency: readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.10
+Already downloaded: /Users/cooperzhu/Library/Caches/Homebrew/downloads/4ddd52803319828799f1932d4c7fa8d11c667049b20a56341c0c19246a1be93b--readline-8.2.10.bottle_manifest.json
+==> Pouring readline--8.2.10.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/readline/8.2.10: 51 files, 1.7MB
+==> Installing awscli dependency: sqlite
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.46.0
+Already downloaded: /Users/cooperzhu/Library/Caches/Homebrew/downloads/7d6bff4676b4f32a64f5d9436491b1eedb27a559ef4ff63aaaa62834a981bcd0--sqlite-3.46.0.bottle_manifest.json
+==> Pouring sqlite--3.46.0.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/sqlite/3.46.0: 12 files, 4.7MB
+==> Installing awscli dependency: xz
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/manifests/5.4.6
+Already downloaded: /Users/cooperzhu/Library/Caches/Homebrew/downloads/b2cc4077807c100af6e0253f51d186f187ff55165638cbe3a4aa16d1c4762660--xz-5.4.6.bottle_manifest.json
+==> Pouring xz--5.4.6.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/xz/5.4.6: 164 files, 2.6MB
+==> Installing awscli dependency: python@3.11
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.11/manifests/3.11.9
+Already downloaded: /Users/cooperzhu/Library/Caches/Homebrew/downloads/434092e38cddf8d8908f3dad7a233fe43e47dc9fdf39bac5845e656f0bc1110f--python@3.11-3.11.9.bottle_manifest.json
+==> Pouring python@3.11--3.11.9.sonoma.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3-3.11
+Target /usr/local/bin/2to3-3.11
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3-3.11'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.11
+
+To list all files that would be deleted:
+  brew link --overwrite python@3.11 --dry-run
+
+Possible conflicting files are:
+/usr/local/bin/2to3-3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/2to3-3.11
+/usr/local/bin/idle3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/idle3.11
+/usr/local/bin/pydoc3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/pydoc3.11
+/usr/local/bin/python3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11
+/usr/local/bin/python3.11-config -> /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11-config
+==> /usr/local/Cellar/python@3.11/3.11.9/bin/python3.11 -Im ensurepip
+==> /usr/local/Cellar/python@3.11/3.11.9/bin/python3.11 -Im pip install -v --no-
+==> Summary
+🍺  /usr/local/Cellar/python@3.11/3.11.9: 3,327 files, 59.4MB
+==> Installing awscli
+==> Pouring awscli--2.17.9.sonoma.bottle.tar.gz
+==> Caveats
+The "examples" directory has been installed to:
+  /usr/local/share/awscli/examples
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/awscli/2.17.9: 14,234 files, 127.8MB
+==> Running `brew cleanup awscli`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> awscli
+The "examples" directory has been installed to:
+  /usr/local/share/awscli/examples
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws s3 cp s3://cmu-95797-23m2 /local/path/to/destination --recursive
+
+
+[Errno 30] Read-only file system: '/local'
+(env) cooperzhu@Coopers-MacBook-Air ~ % import duckdb
+zsh: command not found: import
+(env) cooperzhu@Coopers-MacBook-Air ~ % conn = duckdb.connect('my_database.duckdb')  # Persistent storage
+
+zsh: number expected
+(env) cooperzhu@Coopers-MacBook-Air ~ % nano import_data.py
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % python import_data.py
+(env) cooperzhu@Coopers-MacBook-Air ~ % nano import_data.py
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % nano import_data.py
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % python import_data.py
+
+Files in the directory:
+_aws
+_brew
+aws_zsh_completer.sh
+Importing CSV files into DuckDB...
+Traceback (most recent call last):
+  File "import_data.py", line 17, in <module>
+    conn.execute(f"""
+duckdb.duckdb.IOException: IO Error: No files found that match the pattern "/usr/local/share/zsh/site-functions/*.csv"
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws s3 cp s3://cmu-95797-23m2 /usr/local/share/zsh/site-functions --recursive
+
+fatal error: Unable to locate credentials
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws configure
+
+AWS Access Key ID [None]: eh3yfQ7^
+AWS Secret Access Key [None]: pd3bZtDD3lGjJ5j54YLTS/cOKdM+md23oNDL3nKS
+Default region name [None]: 
+Default output format [None]:     
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws s3 cp s3://cmu-95797-23m2 /usr/local/share/zsh/site-functions --recursive
+
+fatal error: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: The AWS Access Key Id you provided does not exist in our records.
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws configure
+AWS Access Key ID [****************fQ7^]: AKIATCKANWLI3CH3WYOB
+AWS Secret Access Key [****************3nKS]: 	
+
+vU70WOJ+NSirou9gHa3EfFUyxPTsGPkmaJxEZ53ODefault region name [None]: Default output format [None]: json
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws s3 cp s3://cmu-95797-23m2 /usr/local/share/zsh/site-functions --recursive
+
+fatal error: An error occurred (SignatureDoesNotMatch) when calling the ListObjectsV2 operation: The request signature we calculated does not match the signature you provided. Check your key and signing method.
+(env) cooperzhu@Coopers-MacBook-Air ~ % cat ~/.aws/credentials
+
+[default]
+aws_access_key_id = AKIATCKANWLI3CH3WYOB
+aws_secret_access_key = 	
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws s3 ls
+
+
+An error occurred (SignatureDoesNotMatch) when calling the ListBuckets operation: The request signature we calculated does not match the signature you provided. Check your key and signing method.
+(env) cooperzhu@Coopers-MacBook-Air ~ % mv ~/.aws/credentials ~/.aws/credentials.bak
+mv ~/.aws/config ~/.aws/config.bak
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws configure
+
+AWS Access Key ID [None]: AKIATCKANWLI3CH3WYOB
+AWS Secret Access Key [None]: 
+Default region name [None]: 
+Default output format [None]: json
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws s3 cp s3://cmu-95797-23m2 /usr/local/share/zsh/site-functions --recursive
+
+
+Partial credentials found in shared-credentials-file, missing: aws_secret_access_key
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws configure                                                                
+
+AWS Access Key ID [****************WYOB]: AKIATCKANWLI3CH3WYOB
+AWS Secret Access Key [None]: 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
+Default region name [None]: 
+Default output format [json]: json
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws s3 cp s3://cmu-95797-23m2 /usr/local/share/zsh/site-functions --recursive
+
+fatal error: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws configure                                                                
+
+AWS Access Key ID [****************WYOB]: AKIATCKANWLI3CH3WYOB
+AWS Secret Access Key [****************3nKS]: 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
+Default region name [None]: 
+Default output format [json]: json
+(env) cooperzhu@Coopers-MacBook-Air ~ % aws s3 cp s3://cmu-95797-23m2 /usr/local/share/zsh/site-functions --recursive
+download: s3://cmu-95797-23m2/data/nyct2010_15b/nyct2010.prj to ../../usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.prj
+download: s3://cmu-95797-23m2/data/fhv_bases.csv to ../../usr/local/share/zsh/site-functions/data/fhv_bases.csv
+download: s3://cmu-95797-23m2/data/nyct2010_15b/nyct2010.dbf to ../../usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.dbf
+download: s3://cmu-95797-23m2/data/central_park_weather.csv to ../../usr/local/share/zsh/site-functions/data/central_park_weather.csv
+download: s3://cmu-95797-23m2/data/nyct2010_15b/nyct2010.shx to ../../usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.shx
+download: s3://cmu-95797-23m2/data/citibike-tripdata.csv.gz to ../../usr/local/share/zsh/site-functions/data/citibike-tripdata.csv.gz
+download: s3://cmu-95797-23m2/data/nyct2010_15b/nyct2010.shp to ../../usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.shp
+download: s3://cmu-95797-23m2/data/nyct2010_15b/nyct2010.shp.xml to ../../usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.shp.xml
+download: s3://cmu-95797-23m2/data/taxi/fhv_tripdata.parquet to ../../usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet
+download: s3://cmu-95797-23m2/data/taxi/fhvhv_tripdata.parquet to ../../usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet
+download: s3://cmu-95797-23m2/data/taxi_zones/taxi_zones.sbx to ../../usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.sbx
+download: s3://cmu-95797-23m2/data/taxi_zones/taxi_zones.dbf to ../../usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.dbf
+download: s3://cmu-95797-23m2/data/taxi_zones/taxi_zones.prj to ../../usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.prj
+download: s3://cmu-95797-23m2/data/taxi_zones/taxi_zones.shp.xml to ../../usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp.xml
+download: s3://cmu-95797-23m2/data/taxi_zones/taxi_zones.sbn to ../../usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.sbn
+download: s3://cmu-95797-23m2/data/taxi_zones/taxi_zones.shx to ../../usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shx
+download: s3://cmu-95797-23m2/index.html to ../../usr/local/share/zsh/site-functions/index.html
+download: s3://cmu-95797-23m2/data/taxi_zones/taxi_zones.shp to ../../usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp
+download: s3://cmu-95797-23m2/data/taxi/green_tripdata.parquet to ../../usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet
+download: s3://cmu-95797-23m2/data/taxi/yellow_tripdata.parquet to ../../usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet
+(env) cooperzhu@Coopers-MacBook-Air ~ % nano ingest_data.py
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % python ingest_data.py
+
+Files in the directory:
+/usr/local/share/zsh/site-functions/data/central_park_weather.csv
+/usr/local/share/zsh/site-functions/data/citibike-tripdata.csv.gz
+/usr/local/share/zsh/site-functions/data/fhv_bases.csv
+/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.dbf
+/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp.xml
+/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp
+/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.sbx
+/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shx
+/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.prj
+/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.sbn
+/usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.shp
+/usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.shx
+/usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.dbf
+/usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.prj
+/usr/local/share/zsh/site-functions/data/nyct2010_15b/nyct2010.shp.xml
+/usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet
+/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet
+/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet
+/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet
+Importing /usr/local/share/zsh/site-functions/data/central_park_weather.csv into DuckDB
+Importing /usr/local/share/zsh/site-functions/data/fhv_bases.csv into DuckDB
+Importing /usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet into DuckDB
+Importing /usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet into DuckDB
+Importing /usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet into DuckDB
+Importing /usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet into DuckDB
+Data ingestion complete.
+(env) cooperzhu@Coopers-MacBook-Air ~ % nano dump_raw_schemas.sql
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % duckdb homework.db -s ".read dump_raw_schemas.sql" > answers/raw_schemas.txt
+
+zsh: no such file or directory: answers/raw_schemas.txt
+(env) cooperzhu@Coopers-MacBook-Air ~ % duckdb homework.db -s ".read dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+zsh: command not found: duckdb
+(env) cooperzhu@Coopers-MacBook-Air ~ % export PATH=$PATH:/path/to/duckdb
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % echo 'export PATH=$PATH:/path/to/duckdb' >> ~/.zshrc
+source ~/.zshrc
+
+(env) cooperzhu@Coopers-MacBook-Air ~ % duckdb homework.db -s ".read dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+zsh: command not found: duckdb
+(env) cooperzhu@Coopers-MacBook-Air ~ % brew install duckdb
+
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+##################################################################################################################################### 100.0%
+==> Downloading https://formulae.brew.sh/api/cask.jws.json
+##################################################################################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/duckdb/manifests/1.0.0
+##################################################################################################################################### 100.0%
+==> Fetching duckdb
+==> Downloading https://ghcr.io/v2/homebrew/core/duckdb/blobs/sha256:b5047193fa43ce0279e9e9345def87f70de4696b2d038967ca36447cdd6be75c
+##################################################################################################################################### 100.0%
+==> Pouring duckdb--1.0.0.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/duckdb/1.0.0: 1,115 files, 143.9MB
+==> Running `brew cleanup duckdb`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+(env) cooperzhu@Coopers-MacBook-Air ~ % tar -xvf duckdb_cli-osx-x86_64.tar.gz
+
+tar: Error opening archive: Failed to open 'duckdb_cli-osx-x86_64.tar.gz'
+(env) cooperzhu@Coopers-MacBook-Air ~ % cd ~/Downloads
+unzip duckdb_cli-osx-x86_64.zip
+
+unzip:  cannot find or open duckdb_cli-osx-x86_64.zip, duckdb_cli-osx-x86_64.zip.zip or duckdb_cli-osx-x86_64.zip.ZIP.
+(env) cooperzhu@Coopers-MacBook-Air Downloads % cd ~/Downloads
+unzip duckdb_cli-osx-universal (1).zip
+
+zsh: no matches found: (1).zip
+(env) cooperzhu@Coopers-MacBook-Air Downloads % ls ~/Downloads
+
+1707692585.3757691.jpg
+20181129090035735.pdf
+20220924-statements-2687-.pdf
+3-Introduction-to-AI-ML-and-DL.md
+3cd349779b9765fe34160d683d69f678-94da64ad2f71a461cc385a4ca6b833630118950e.zip
+8PD9G378.pdf
+95-703 S24 HW4-RelAlg_SQL.pdf
+95-865 Fall 2023 Quiz 2 (Solutions).pdf
+95796_F22ProblemSolving2.pdf
+95796_F22ProblemSolving3.pdf
+95796_F22ProblemSolvingSession1.pdf
+95796_F22_hm3.pdf
+95796_worked_exercises_solutions.pdf
+978-3-030-41110-7.pdf
+ACD Amazon Search Performance_CZ.twbx
+ADP_TAX_FORMS25-04-2023-13-01-50.zip
+AI Academy - Course selector.xlsx
+About-HONED-Brief (1).pdf
+About-HONED-Brief.pdf
+Acquisti-2015.pdf
+Anaconda3-2020.11-MacOSX-x86_64.sh
+BlueJeansMeetingInstaller(x86_64).dmg
+Brokerage Account-xxx5186-Consolidated Form 1099-2021.pdf
+Cooper Zhu_Global Offer Letter - All Countries.pdf
+Crisis Line Staffing _IBC.pptx
+DALL·E 2024-02-14 15.28.29 - Create a simplified Entity-Relationship Diagram (ERD) for an information technology conference database using the modified Chen format. The ERD should.webp
+DALL·E 2024-02-14 15.29.06 - Create a simplified Entity-Relationship Diagram (ERD) for an information technology conference database using the modified Chen format. The ERD should.webp
+DALL·E 2024-02-14 15.30.56 - Create a simplified Entity-Relationship Diagram (ERD) for an information technology conference database, strictly following the modified Chen format. .webp
+DALL·E 2024-05-16 11.13.17 - An enhanced illustration of a digital bookshelf, displaying a diverse range of ebooks. Each ebook should look distinctly digital, with glowing screens.webp
+DBM_Final_CooperZhu.pdf
+DFLG_A4_2024.pdf
+Data Science and Analytics Executive Consultant (NYC).docx
+DetailedBillDec2023 (1).pdf
+DetailedBillDec2023.pdf
+DetailedBillJan2024 (1).pdf
+DetailedBillJan2024.pdf
+Doc Feb 20, 2023, 12.38 (1).pdf
+ElectronicDisclosure-20220302073233.pdf
+Ex_Files_Regression_R_Excel
+Ex_Files_Regression_R_Excel.zip
+Final Severance Agreement - Cooper Zhu.zip
+FinalTime-5.docx
+Firefox 98.0.1.dmg
+Flux.app
+Flux.zip
+FoodReview-248.pdf
+GenAI_HW1_v1_srlong.ipynb
+Grammarly.clrYx5d3kgxt8catmcra0k02.dmg
+Homework03.doc
+IMG_1619.HEIC
+IMG_3632.PNG
+IMG_4196.HEIC
+ImariMiniProj2.pdf
+Install Spotify.app
+InstallLDBPackage64c-2-0-9-02 (1).zip
+InstallLDBPackage64c-2-0-9-02 (2).zip
+InstallLDBPackage64c-2-0-9-02.zip
+InstallLDBPackage64c-2-1-2-00.zip
+Installer_v803.dmg
+Insurance_Agent_MENGJIE_YANG.vcf
+JBoazzo_Economics_FinalExam (1).docx
+JBoazzo_Economics_FinalExam.docx
+JDBoazzo_Assignment1.ipynb
+JDBoazzo_MinitabGroup2.docx
+JobstobeDone_Team2 (1).docx
+JobstobeDone_Team2.docx
+M3 Director of Analytics (1).pdf
+M3 Director of Analytics.pdf
+MC_Hasbro_Pacing_Report_1.11-10.124_ v2.xlsx
+MMM Intro (1).pptx
+MMM Intro.pptx
+Mac_TurboTax_Download.dmg
+Manager of Analytics and Reporting (1).pdf
+Manager of Analytics and Reporting.pdf
+MiniProject1_JDB.docx
+Minitab (1).mpx
+Minitab (2).mpx
+Minitab tutorial (1).pdf
+Minitab tutorial (2).pdf
+Minitab tutorial.pdf
+Minitab.mpx
+MinitabLicenseF22 (1).zip
+MinitabLicenseF22.zip
+Module1_082619.pdf
+NBD_practice.ipynb
+New Folder With Items
+PY0101EN-1-2-Strings (1).ipynb
+PY0101EN-1-2-Strings.ipynb
+PY0101EN-4-3-LoadData (1).ipynb
+PY0101EN-4-3-LoadData.ipynb
+PY0101EN_Coursera_FinalAssignment (1).ipynb
+PY0101EN_Coursera_FinalAssignment.ipynb
+Posner - 1978.pdf
+ProjDraftIBC.docx
+Publishing in Tableau Public.pdf
+QUERIES II .zip
+Quizzes_Outline (1).docx
+R-4.3.1-arm64.pkg
+RStudio-2023.09.1-494.dmg
+SS report 1011-1024 (1) (1).xlsx
+SXM - Data Science and Analytics Executive Consultant (NYC).docx
+Safe Together_New Employee Resources Document.pdf
+Screen Shot 2023-09-01 at 11.27.02 AM.png
+Slack-4.29.149-macOS.dmg
+SpotifyInstaller.zip
+Statistics for IT Managers F22.pdf
+SummaryBillDec2023 (1).pdf
+SummaryBillDec2023.pdf
+SummaryBillJan2024.pdf
+TableauDesktop-2023-3-1.dmg
+TablesForExam.zip
+Teams_osx_s_8D99A4D9B55C266-7-0_.pkg
+VMware-Horizon-Client-2111-8.4.0-18968281.dmg
+VSCode-darwin-universal.zip
+VennDiagrams_MutallyExclusive_Independent.pdf
+Visual Studio Code.app
+Vocabulary Catalog List Detail Report  20231206-120256.pdf
+Vocabulary Catalog List Detail Report  20231206-120446.pdf
+Vocabulary Catalog List Detail Report  20231206-120454.pdf
+Vocabulary Catalog List Detail Report  20240229-180504.pdf
+WebAppSyllabusSu24.pptx
+Week 2 - Predict Median Monthly Stock Price (1).ipynb
+Week 2 - Predict Median Monthly Stock Price.ipynb
+Zhu_Resume_2023.pdf
+Zhu_Resume_2024_V3 (1).pdf
+Zhu_Resume_2024_V3.pdf
+Zoom.pkg
+anlayst docs
+bill-rates-2002-2021.csv
+class_evals_final.html
+cs112_f19_week1_linter.py
+data-society-us-air-pollution-data.zip
+data_caveats_current.xlsx
+duckdb
+duckdb 2
+duckdb 3
+duckdb_cli-osx-universal (1).zip
+duckdb_cli-osx-universal.zip
+frieze-new-york-tickets-79183265.pdf
+googlechrome.dmg
+hw1.py
+hw2 (word vesion)-1.docx
+invite (1).ics (1)
+invite.ics (1)
+jre-8u401-macosx-x64.dmg
+m_turbotax_1040p_ar_2020.010.0100.dmg
+pdyck07 (1).doc
+pdyck07.doc
+perfidia 4.28.2022 (1).pdf
+perfidia 4.28.2022.pdf
+ppp-p1-types-variables-functions.zip
+ppp-p5-debug-refactor-test-package (1).zip
+ppp-p5-debug-refactor-test-package.zip
+ppp-p8-data-analysis.zip
+project-author-debugging-43g8qo9g_99aa2fe7-8359-48c3-ab8e-24fa64e477fc_20230704194056
+project-author-debugging-43g8qo9g_99aa2fe7-8359-48c3-ab8e-24fa64e477fc_20230704194056.tar.gz
+project-author-debugging-43g8qo9g_99aa2fe7-8359-48c3-ab8e-24fa64e477fc_20230704201253.tar.gz
+project-author-debugging-43g8qo9g_99aa2fe7-8359-48c3-ab8e-24fa64e477fc_20230705140149.tar.gz
+project-author-iteration-tphhdgzm_22e2a0a0-275b-4239-af25-4fc897d5880b_20230606205728
+project-author-iteration-tphhdgzm_22e2a0a0-275b-4239-af25-4fc897d5880b_20230606205728.tar.gz
+project-author-web-scrapi-ddznb7jc_a11c6c8b-ba6f-430f-960e-1e573893fa6b_20230716010729
+project-author-web-scrapi-ddznb7jc_a11c6c8b-ba6f-430f-960e-1e573893fa6b_20230716010729.tar.gz
+project-author-web-scrapi-ddznb7jc_a11c6c8b-ba6f-430f-960e-1e573893fa6b_20230716144214
+project-author-web-scrapi-ddznb7jc_a11c6c8b-ba6f-430f-960e-1e573893fa6b_20230716144214 (1)
+project-author-web-scrapi-ddznb7jc_a11c6c8b-ba6f-430f-960e-1e573893fa6b_20230716144214 (1).tar.gz
+project-author-web-scrapi-ddznb7jc_a11c6c8b-ba6f-430f-960e-1e573893fa6b_20230716144214.tar.gz
+project-author-web-scrapi-ddznb7jc_a11c6c8b-ba6f-430f-960e-1e573893fa6b_20230716153540
+project-author-web-scrapi-ddznb7jc_a11c6c8b-ba6f-430f-960e-1e573893fa6b_20230716153540.tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230713012340
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230713012340.tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230714143255
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230714143255 (1)
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230714143255 (1).tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230714143255.tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230715214625
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230715214625.tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230715221109
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230715221109 (1)
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230715221109 (1).tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230715221109 (2)
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230715221109 (2).tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230715221109.tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (1)
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (1) 2
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (1).tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (2)
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (2).tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (3)
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (3).tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (4)
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (4).tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (5)
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158 (5).tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718175158.tar.gz
+project-author-web-scrapi-ddznb7jc_f50802f1-20e7-4026-87d3-bdab1c1201d6_20230718201032.tar.gz
+pycharm-community-2021.1.3.dmg
+real-long-term-rates-2000-2021.csv
+resume_CV.zip
+statement.pdf
+titanic-dataset-from-kaggle.zip
+~$Boazzo_MinitabGroup2.docx
+~$M - Data Science and Analytics Executive Consultant (NYC).docx
+(env) cooperzhu@Coopers-MacBook-Air Downloads % cd ~/Downloads
+unzip duckdb_cli-osx-universal\ \(1\).zip
+
+Archive:  duckdb_cli-osx-universal (1).zip
+replace duckdb? [y]es, [n]o, [A]ll, [N]one, [r]ename: y
+  inflating: duckdb                  
+(env) cooperzhu@Coopers-MacBook-Air Downloads % sudo mv duckdb /usr/local/bin/
+
+Password:
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb --version
+
+zsh: killed     duckdb --version
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db -s ".read dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+zsh: killed     duckdb homework.db -s ".read dump_raw_schemas.sql" > 
+(env) cooperzhu@Coopers-MacBook-Air Downloads % sudo chmod +x /usr/local/bin/duckdb
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db -s ".read dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+zsh: killed     duckdb homework.db -s ".read dump_raw_schemas.sql" > 
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db -s ".read dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+Error: cannot open "dump_raw_schemas.sql"
+(env) cooperzhu@Coopers-MacBook-Air Downloads % python3 --version
+pip3 --version
+
+Python 3.8.5
+pip 24.0 from /opt/anaconda3/lib/python3.8/site-packages/pip (python 3.8)
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db -s ".read dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt             
+
+Error: cannot open "dump_raw_schemas.sql"
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb --version
+
+v1.0.0 1f98600c2c
+(env) cooperzhu@Coopers-MacBook-Air Downloads % pip3 install duckdb
+
+Collecting duckdb
+  Downloading duckdb-1.0.0.tar.gz (11.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.4/11.4 MB 2.3 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Building wheels for collected packages: duckdb
+  Building wheel for duckdb (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+  
+  × Building wheel for duckdb (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [173 lines of output]
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib.macosx-10.9-x86_64-cpython-38
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb
+      copying duckdb/filesystem.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb
+      copying duckdb/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb
+      copying duckdb/bytes_io_wrapper.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb
+      copying duckdb/udf.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/typing
+      copying duckdb/typing/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/typing
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/query_graph
+      copying duckdb/query_graph/__main__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/query_graph
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/functional
+      copying duckdb/functional/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/functional
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/value
+      copying duckdb/value/constant.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/value
+      creating build/lib.macosx-10.9-x86_64-cpython-38/adbc_driver_duckdb
+      copying adbc_driver_duckdb/dbapi.py -> build/lib.macosx-10.9-x86_64-cpython-38/adbc_driver_duckdb
+      copying adbc_driver_duckdb/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/adbc_driver_duckdb
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental
+      copying duckdb/experimental/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark
+      copying duckdb/experimental/spark/exception.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark
+      copying duckdb/experimental/spark/_typing.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark
+      copying duckdb/experimental/spark/_globals.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark
+      copying duckdb/experimental/spark/conf.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark
+      copying duckdb/experimental/spark/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark
+      copying duckdb/experimental/spark/context.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/catalog.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/functions.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/_typing.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/dataframe.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/conf.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/session.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/type_utils.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/types.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/readwriter.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/group.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/udf.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/streaming.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      copying duckdb/experimental/spark/sql/column.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/sql
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/errors
+      copying duckdb/experimental/spark/errors/error_classes.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/errors
+      copying duckdb/experimental/spark/errors/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/errors
+      copying duckdb/experimental/spark/errors/utils.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/errors
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/errors/exceptions
+      copying duckdb/experimental/spark/errors/exceptions/__init__.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/errors/exceptions
+      copying duckdb/experimental/spark/errors/exceptions/base.py -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark/errors/exceptions
+      running egg_info
+      writing duckdb.egg-info/PKG-INFO
+      writing dependency_links to duckdb.egg-info/dependency_links.txt
+      writing top-level names to duckdb.egg-info/top_level.txt
+      ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+      reading manifest file 'duckdb.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      warning: no files found matching '*.h' under directory 'duckdb'
+      warning: no files found matching '*.hpp' under directory 'duckdb'
+      warning: no files found matching '*.cpp' under directory 'duckdb'
+      warning: no files found matching '*.h' under directory 'src'
+      warning: manifest_maker: MANIFEST.in, line 6: 'recursive-include' expects <dir> <pattern1> <pattern2> ...
+      
+      writing manifest file 'duckdb.egg-info/SOURCES.txt'
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs
+      copying duckdb-stubs/__init__.pyi -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs/functional
+      copying duckdb-stubs/functional/__init__.pyi -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs/functional
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs/typing
+      copying duckdb-stubs/typing/__init__.pyi -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs/typing
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs/value
+      copying duckdb-stubs/value/__init__.pyi -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs/value
+      creating build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs/value/constant
+      copying duckdb-stubs/value/constant/__init__.pyi -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb-stubs/value/constant
+      copying duckdb/experimental/spark/LICENSE -> build/lib.macosx-10.9-x86_64-cpython-38/duckdb/experimental/spark
+      running build_ext
+      building 'duckdb.duckdb' extension
+      creating build/temp.macosx-10.9-x86_64-cpython-38
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/fts
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/icu
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/icu/third_party
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/icu/third_party/icu
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/icu/third_party/icu/stubdata
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/json
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/parquet
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/tpcds
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/tpcds/dsdgen
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/tpcds/dsdgen/dsdgen-c
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/tpch
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/tpch/dbgen
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/src
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/src/common
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/src/common/vector_operations
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/src/verification
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/fastpforlib
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/fmt
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/fsst
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/hyperloglog
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/libpg_query
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/lz4
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/mbedtls
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/mbedtls/library
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/miniz
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/parquet
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/re2
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/re2/re2
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/re2/util
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/skiplist
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/snappy
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/snowball
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/snowball/libstemmer
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/snowball/runtime
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/snowball/src_c
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/thrift
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/thrift/thrift
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/thrift/thrift/protocol
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/thrift/thrift/transport
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/utf8proc
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/yyjson
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/zstd
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/zstd/common
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/zstd/compress
+      creating build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/third_party/zstd/decompress
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/arrow
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/common
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/functional
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/jupyter
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/native
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/numpy
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/pandas
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/pybind11
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/pyconnection
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/pyexpression
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/pyrelation
+      creating build/temp.macosx-10.9-x86_64-cpython-38/src/typing
+      gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/opt/anaconda3/include -arch x86_64 -I/opt/anaconda3/include -arch x86_64 -DDUCKDB_PYTHON_LIB_NAME=duckdb -DDUCKDB_EXTENSION_PARQUET_LINKED -DDUCKDB_EXTENSION_ICU_LINKED -DDUCKDB_EXTENSION_FTS_LINKED -DDUCKDB_EXTENSION_TPCH_LINKED -DDUCKDB_EXTENSION_TPCDS_LINKED -DDUCKDB_EXTENSION_JSON_LINKED -DDUCKDB_EXTENSION_AUTOLOAD_DEFAULT=1 -DDUCKDB_EXTENSION_AUTOINSTALL_DEFAULT=1 -Iduckdb_build/src/include -Iduckdb_build/third_party/concurrentqueue -Iduckdb_build/third_party/fast_float -Iduckdb_build/third_party/fastpforlib -Iduckdb_build/third_party/fmt/include -Iduckdb_build/third_party/fsst -Iduckdb_build/third_party/httplib -Iduckdb_build/third_party/hyperloglog -Iduckdb_build/third_party/jaro_winkler -Iduckdb_build/third_party/jaro_winkler/details -Iduckdb_build/third_party/libpg_query -Iduckdb_build/third_party/libpg_query/include -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/third_party/mbedtls/library -Iduckdb_build/third_party/miniz -Iduckdb_build/third_party/pcg -Iduckdb_build/third_party/re2 -Iduckdb_build/third_party/skiplist -Iduckdb_build/third_party/tdigest -Iduckdb_build/third_party/utf8proc -Iduckdb_build/third_party/utf8proc/include -Iduckdb_build/third_party/yyjson/include -Iduckdb_build/extension/parquet/include -Iduckdb_build/third_party/parquet -Iduckdb_build/third_party/thrift -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/snappy -Iduckdb_build/third_party/zstd/include -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/extension/icu/include -Iduckdb_build/extension/icu/third_party/icu/common -Iduckdb_build/extension/icu/third_party/icu/i18n -Iduckdb_build/extension/fts/include -Iduckdb_build/third_party/snowball/libstemmer -Iduckdb_build/third_party/snowball/runtime -Iduckdb_build/third_party/snowball/src_c -Iduckdb_build/extension/tpch/include -Iduckdb_build/extension/tpch/dbgen/include -Iduckdb_build/extension/tpcds/include -Iduckdb_build/extension/tpcds/dsdgen/include -Iduckdb_build/extension/tpcds/dsdgen/include/dsdgen-c -Iduckdb_build/extension/json/include -Iduckdb_build -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-install-5__vugmh/duckdb_87c7e34366a74fbc8dd2332212e88a11/src/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/opt/anaconda3/include/python3.8 -c duckdb_build/extension/fts/fts_extension.cpp -o build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/fts/fts_extension.o -std=c++11 -g0 -stdlib=libc++ -mmacosx-version-min=10.7
+      gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/opt/anaconda3/include -arch x86_64 -I/opt/anaconda3/include -arch x86_64 -DDUCKDB_PYTHON_LIB_NAME=duckdb -DDUCKDB_EXTENSION_PARQUET_LINKED -DDUCKDB_EXTENSION_ICU_LINKED -DDUCKDB_EXTENSION_FTS_LINKED -DDUCKDB_EXTENSION_TPCH_LINKED -DDUCKDB_EXTENSION_TPCDS_LINKED -DDUCKDB_EXTENSION_JSON_LINKED -DDUCKDB_EXTENSION_AUTOLOAD_DEFAULT=1 -DDUCKDB_EXTENSION_AUTOINSTALL_DEFAULT=1 -Iduckdb_build/src/include -Iduckdb_build/third_party/concurrentqueue -Iduckdb_build/third_party/fast_float -Iduckdb_build/third_party/fastpforlib -Iduckdb_build/third_party/fmt/include -Iduckdb_build/third_party/fsst -Iduckdb_build/third_party/httplib -Iduckdb_build/third_party/hyperloglog -Iduckdb_build/third_party/jaro_winkler -Iduckdb_build/third_party/jaro_winkler/details -Iduckdb_build/third_party/libpg_query -Iduckdb_build/third_party/libpg_query/include -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/third_party/mbedtls/library -Iduckdb_build/third_party/miniz -Iduckdb_build/third_party/pcg -Iduckdb_build/third_party/re2 -Iduckdb_build/third_party/skiplist -Iduckdb_build/third_party/tdigest -Iduckdb_build/third_party/utf8proc -Iduckdb_build/third_party/utf8proc/include -Iduckdb_build/third_party/yyjson/include -Iduckdb_build/extension/parquet/include -Iduckdb_build/third_party/parquet -Iduckdb_build/third_party/thrift -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/snappy -Iduckdb_build/third_party/zstd/include -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/extension/icu/include -Iduckdb_build/extension/icu/third_party/icu/common -Iduckdb_build/extension/icu/third_party/icu/i18n -Iduckdb_build/extension/fts/include -Iduckdb_build/third_party/snowball/libstemmer -Iduckdb_build/third_party/snowball/runtime -Iduckdb_build/third_party/snowball/src_c -Iduckdb_build/extension/tpch/include -Iduckdb_build/extension/tpch/dbgen/include -Iduckdb_build/extension/tpcds/include -Iduckdb_build/extension/tpcds/dsdgen/include -Iduckdb_build/extension/tpcds/dsdgen/include/dsdgen-c -Iduckdb_build/extension/json/include -Iduckdb_build -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-install-5__vugmh/duckdb_87c7e34366a74fbc8dd2332212e88a11/src/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/opt/anaconda3/include/python3.8 -c duckdb_build/extension/fts/fts_indexing.cpp -o build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/fts/fts_indexing.o -std=c++11 -g0 -stdlib=libc++ -mmacosx-version-min=10.7
+      gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/opt/anaconda3/include -arch x86_64 -I/opt/anaconda3/include -arch x86_64 -DDUCKDB_PYTHON_LIB_NAME=duckdb -DDUCKDB_EXTENSION_PARQUET_LINKED -DDUCKDB_EXTENSION_ICU_LINKED -DDUCKDB_EXTENSION_FTS_LINKED -DDUCKDB_EXTENSION_TPCH_LINKED -DDUCKDB_EXTENSION_TPCDS_LINKED -DDUCKDB_EXTENSION_JSON_LINKED -DDUCKDB_EXTENSION_AUTOLOAD_DEFAULT=1 -DDUCKDB_EXTENSION_AUTOINSTALL_DEFAULT=1 -Iduckdb_build/src/include -Iduckdb_build/third_party/concurrentqueue -Iduckdb_build/third_party/fast_float -Iduckdb_build/third_party/fastpforlib -Iduckdb_build/third_party/fmt/include -Iduckdb_build/third_party/fsst -Iduckdb_build/third_party/httplib -Iduckdb_build/third_party/hyperloglog -Iduckdb_build/third_party/jaro_winkler -Iduckdb_build/third_party/jaro_winkler/details -Iduckdb_build/third_party/libpg_query -Iduckdb_build/third_party/libpg_query/include -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/third_party/mbedtls/library -Iduckdb_build/third_party/miniz -Iduckdb_build/third_party/pcg -Iduckdb_build/third_party/re2 -Iduckdb_build/third_party/skiplist -Iduckdb_build/third_party/tdigest -Iduckdb_build/third_party/utf8proc -Iduckdb_build/third_party/utf8proc/include -Iduckdb_build/third_party/yyjson/include -Iduckdb_build/extension/parquet/include -Iduckdb_build/third_party/parquet -Iduckdb_build/third_party/thrift -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/snappy -Iduckdb_build/third_party/zstd/include -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/extension/icu/include -Iduckdb_build/extension/icu/third_party/icu/common -Iduckdb_build/extension/icu/third_party/icu/i18n -Iduckdb_build/extension/fts/include -Iduckdb_build/third_party/snowball/libstemmer -Iduckdb_build/third_party/snowball/runtime -Iduckdb_build/third_party/snowball/src_c -Iduckdb_build/extension/tpch/include -Iduckdb_build/extension/tpch/dbgen/include -Iduckdb_build/extension/tpcds/include -Iduckdb_build/extension/tpcds/dsdgen/include -Iduckdb_build/extension/tpcds/dsdgen/include/dsdgen-c -Iduckdb_build/extension/json/include -Iduckdb_build -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-install-5__vugmh/duckdb_87c7e34366a74fbc8dd2332212e88a11/src/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/opt/anaconda3/include/python3.8 -c duckdb_build/extension/icu/./icu-dateadd.cpp -o build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/icu/./icu-dateadd.o -std=c++11 -g0 -stdlib=libc++ -mmacosx-version-min=10.7
+      gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/opt/anaconda3/include -arch x86_64 -I/opt/anaconda3/include -arch x86_64 -DDUCKDB_PYTHON_LIB_NAME=duckdb -DDUCKDB_EXTENSION_PARQUET_LINKED -DDUCKDB_EXTENSION_ICU_LINKED -DDUCKDB_EXTENSION_FTS_LINKED -DDUCKDB_EXTENSION_TPCH_LINKED -DDUCKDB_EXTENSION_TPCDS_LINKED -DDUCKDB_EXTENSION_JSON_LINKED -DDUCKDB_EXTENSION_AUTOLOAD_DEFAULT=1 -DDUCKDB_EXTENSION_AUTOINSTALL_DEFAULT=1 -Iduckdb_build/src/include -Iduckdb_build/third_party/concurrentqueue -Iduckdb_build/third_party/fast_float -Iduckdb_build/third_party/fastpforlib -Iduckdb_build/third_party/fmt/include -Iduckdb_build/third_party/fsst -Iduckdb_build/third_party/httplib -Iduckdb_build/third_party/hyperloglog -Iduckdb_build/third_party/jaro_winkler -Iduckdb_build/third_party/jaro_winkler/details -Iduckdb_build/third_party/libpg_query -Iduckdb_build/third_party/libpg_query/include -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/third_party/mbedtls/library -Iduckdb_build/third_party/miniz -Iduckdb_build/third_party/pcg -Iduckdb_build/third_party/re2 -Iduckdb_build/third_party/skiplist -Iduckdb_build/third_party/tdigest -Iduckdb_build/third_party/utf8proc -Iduckdb_build/third_party/utf8proc/include -Iduckdb_build/third_party/yyjson/include -Iduckdb_build/extension/parquet/include -Iduckdb_build/third_party/parquet -Iduckdb_build/third_party/thrift -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/snappy -Iduckdb_build/third_party/zstd/include -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/extension/icu/include -Iduckdb_build/extension/icu/third_party/icu/common -Iduckdb_build/extension/icu/third_party/icu/i18n -Iduckdb_build/extension/fts/include -Iduckdb_build/third_party/snowball/libstemmer -Iduckdb_build/third_party/snowball/runtime -Iduckdb_build/third_party/snowball/src_c -Iduckdb_build/extension/tpch/include -Iduckdb_build/extension/tpch/dbgen/include -Iduckdb_build/extension/tpcds/include -Iduckdb_build/extension/tpcds/dsdgen/include -Iduckdb_build/extension/tpcds/dsdgen/include/dsdgen-c -Iduckdb_build/extension/json/include -Iduckdb_build -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-install-5__vugmh/duckdb_87c7e34366a74fbc8dd2332212e88a11/src/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/opt/anaconda3/include/python3.8 -c duckdb_build/extension/icu/./icu-datefunc.cpp -o build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/icu/./icu-datefunc.o -std=c++11 -g0 -stdlib=libc++ -mmacosx-version-min=10.7
+      duckdb_build/extension/icu/./icu-datefunc.cpp:75:12: error: use of undeclared identifier 'icu_66'; did you mean 'icu_58'?
+              auto tz = icu_66::TimeZone::createTimeZone(icu::UnicodeString::fromUTF8(icu::StringPiece(tz_id.GetString())));
+                        ^~~~~~
+                        icu_58
+      /opt/anaconda3/include/unicode/calendar.h:44:1: note: 'icu_58' declared here
+      U_NAMESPACE_BEGIN
+      ^
+      /opt/anaconda3/include/unicode/uversion.h:119:55: note: expanded from macro 'U_NAMESPACE_BEGIN'
+      #   define U_NAMESPACE_BEGIN extern "C++" { namespace U_ICU_NAMESPACE {
+                                                            ^
+      /opt/anaconda3/include/unicode/uversion.h:114:32: note: expanded from macro 'U_ICU_NAMESPACE'
+      #       define U_ICU_NAMESPACE U_ICU_ENTRY_POINT_RENAME(icu)
+                                     ^
+      /opt/anaconda3/include/unicode/uvernum.h:113:40: note: expanded from macro 'U_ICU_ENTRY_POINT_RENAME'
+      #define U_ICU_ENTRY_POINT_RENAME(x)    U_DEF2_ICU_ENTRY_POINT_RENAME(x,U_ICU_VERSION_SUFFIX)
+                                             ^
+      /opt/anaconda3/include/unicode/uvernum.h:112:44: note: expanded from macro 'U_DEF2_ICU_ENTRY_POINT_RENAME'
+      #define U_DEF2_ICU_ENTRY_POINT_RENAME(x,y) U_DEF_ICU_ENTRY_POINT_RENAME(x,y)
+                                                 ^
+      /opt/anaconda3/include/unicode/uvernum.h:111:43: note: expanded from macro 'U_DEF_ICU_ENTRY_POINT_RENAME'
+      #define U_DEF_ICU_ENTRY_POINT_RENAME(x,y) x ## y
+                                                ^
+      <scratch space>:78:1: note: expanded from here
+      icu_58
+      ^
+      1 error generated.
+      gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/opt/anaconda3/include -arch x86_64 -I/opt/anaconda3/include -arch x86_64 -DDUCKDB_PYTHON_LIB_NAME=duckdb -DDUCKDB_EXTENSION_PARQUET_LINKED -DDUCKDB_EXTENSION_ICU_LINKED -DDUCKDB_EXTENSION_FTS_LINKED -DDUCKDB_EXTENSION_TPCH_LINKED -DDUCKDB_EXTENSION_TPCDS_LINKED -DDUCKDB_EXTENSION_JSON_LINKED -DDUCKDB_EXTENSION_AUTOLOAD_DEFAULT=1 -DDUCKDB_EXTENSION_AUTOINSTALL_DEFAULT=1 -Iduckdb_build/src/include -Iduckdb_build/third_party/concurrentqueue -Iduckdb_build/third_party/fast_float -Iduckdb_build/third_party/fastpforlib -Iduckdb_build/third_party/fmt/include -Iduckdb_build/third_party/fsst -Iduckdb_build/third_party/httplib -Iduckdb_build/third_party/hyperloglog -Iduckdb_build/third_party/jaro_winkler -Iduckdb_build/third_party/jaro_winkler/details -Iduckdb_build/third_party/libpg_query -Iduckdb_build/third_party/libpg_query/include -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/third_party/mbedtls/library -Iduckdb_build/third_party/miniz -Iduckdb_build/third_party/pcg -Iduckdb_build/third_party/re2 -Iduckdb_build/third_party/skiplist -Iduckdb_build/third_party/tdigest -Iduckdb_build/third_party/utf8proc -Iduckdb_build/third_party/utf8proc/include -Iduckdb_build/third_party/yyjson/include -Iduckdb_build/extension/parquet/include -Iduckdb_build/third_party/parquet -Iduckdb_build/third_party/thrift -Iduckdb_build/third_party/lz4 -Iduckdb_build/third_party/snappy -Iduckdb_build/third_party/zstd/include -Iduckdb_build/third_party/mbedtls -Iduckdb_build/third_party/mbedtls/include -Iduckdb_build/extension/icu/include -Iduckdb_build/extension/icu/third_party/icu/common -Iduckdb_build/extension/icu/third_party/icu/i18n -Iduckdb_build/extension/fts/include -Iduckdb_build/third_party/snowball/libstemmer -Iduckdb_build/third_party/snowball/runtime -Iduckdb_build/third_party/snowball/src_c -Iduckdb_build/extension/tpch/include -Iduckdb_build/extension/tpch/dbgen/include -Iduckdb_build/extension/tpcds/include -Iduckdb_build/extension/tpcds/dsdgen/include -Iduckdb_build/extension/tpcds/dsdgen/include/dsdgen-c -Iduckdb_build/extension/json/include -Iduckdb_build -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-install-5__vugmh/duckdb_87c7e34366a74fbc8dd2332212e88a11/src/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/private/var/folders/yb/j38nqww10p59fskdmt7vwmcr0000gn/T/pip-build-env-eu6cwb67/overlay/lib/python3.8/site-packages/pybind11/include -I/opt/anaconda3/include/python3.8 -c duckdb_build/extension/icu/./icu-datepart.cpp -o build/temp.macosx-10.9-x86_64-cpython-38/duckdb_build/extension/icu/./icu-datepart.o -std=c++11 -g0 -stdlib=libc++ -mmacosx-version-min=10.7
+      error: command '/usr/bin/gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for duckdb
+Failed to build duckdb
+ERROR: Could not build wheels for duckdb, which is required to install pyproject.toml-based projects
+
+[notice] A new release of pip is available: 24.0 -> 24.1.1
+[notice] To update, run: pip install --upgrade pip
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db -s ".read dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+Error: cannot open "dump_raw_schemas.sql"
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano ~/Downloads/dump_raw_schemas.sql
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db -s ".read dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+Catalog Error: Table with name fhv_bases does not exist!
+Did you mean "pg_class"?
+Catalog Error: Table with name central_park_weather does not exist!
+Did you mean "temp.information_schema.tables"?
+Catalog Error: Table with name citibike_tripdata does not exist!
+Did you mean "temp.information_schema.schemata"?
+Catalog Error: Table with name fhv_tripdata does not exist!
+Did you mean "temp.information_schema.schemata"?
+Catalog Error: Table with name fhvhv_tripdata does not exist!
+Did you mean "temp.information_schema.schemata"?
+Catalog Error: Table with name taxi_zones does not exist!
+Did you mean "temp.information_schema.tables"?
+Catalog Error: Table with name green_tripdata does not exist!
+Did you mean "pg_am"?
+Catalog Error: Table with name yellow_tripdata does not exist!
+Did you mean "temp.information_schema.schemata"?
+(env) cooperzhu@Coopers-MacBook-Air Downloads % SHOW TABLES;
+
+zsh: command not found: SHOW
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db -c "SHOW TABLES;"
+
+┌─────────┐
+│  name   │
+│ varchar │
+├─────────┤
+│ 0 rows  │
+└─────────┘
+(env) cooperzhu@Coopers-MacBook-Air Downloads % find ~/ -name "*.db"
+
+/Users/cooperzhu//Pictures/Photos Library.photoslibrary/database/photos.db
+/Users/cooperzhu//Pictures/Photos Library.photoslibrary/database/metaSchema.db
+/Users/cooperzhu//Pictures/Photos Library.photoslibrary/private/com.apple.mediaanalysisd/MediaAnalysis/mediaanalysis.db
+/Users/cooperzhu//Library/Application Support/Firefox/Profiles/hoa3h32n.default-release/key4.db
+/Users/cooperzhu//Library/Application Support/Firefox/Profiles/hoa3h32n.default-release/cert9.db
+/Users/cooperzhu//Library/Application Support/Firefox/Profiles/cqn6j376.default-release-1/key4.db
+/Users/cooperzhu//Library/Application Support/Firefox/Profiles/cqn6j376.default-release-1/cert9.db
+/Users/cooperzhu//Library/Application Support/com.apple.control-center.tips/.tipkit/tips-store.db
+/Users/cooperzhu//Library/Application Support/TurboTax 2022/intuitanalytics.db
+/Users/cooperzhu//Library/Application Support/TurboTax 2023/intuitanalytics.db
+/Users/cooperzhu//Library/Application Support/Animoji/CoreDataBackend/avatars.db
+/Users/cooperzhu//Library/Application Support/com.apple.akd/authorization.db
+/Users/cooperzhu//Library/Application Support/com.apple.akd/privateEmails.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us/calendar/calendar-file.enc.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us/calendar/calendar-history-meeting.enc.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us.encks.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us.idx.encks.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us.asyn.encks.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us/gaf88d8wquilw2abmzyg7q@xmpp.zoom.us.sync.encks.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/aaqklf_mrjs8cbxrfxgimg@xmpp.zoom.us/aaqklf_mrjs8cbxrfxgimg@xmpp.zoom.us.idx.encks.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/aaqklf_mrjs8cbxrfxgimg@xmpp.zoom.us/aaqklf_mrjs8cbxrfxgimg@xmpp.zoom.us.asyn.encks.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/aaqklf_mrjs8cbxrfxgimg@xmpp.zoom.us/aaqklf_mrjs8cbxrfxgimg@xmpp.zoom.us.sync.encks.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/aaqklf_mrjs8cbxrfxgimg@xmpp.zoom.us/aaqklf_mrjs8cbxrfxgimg@xmpp.zoom.us.encks.db
+/Users/cooperzhu//Library/Application Support/zoom.us/data/zoomus.enc.db
+find: /Users/cooperzhu//Library/Application Support/MobileSync: Operation not permitted
+/Users/cooperzhu//Library/Application Support/Google/Chrome/first_party_sets.db
+/Users/cooperzhu//Library/Application Support/Google/Chrome/Profile 1/databases/Databases.db
+/Users/cooperzhu//Library/Application Support/Google/Chrome/Profile 1/heavy_ad_intervention_opt_out.db
+/Users/cooperzhu//Library/Application Support/Google/Chrome/Default/databases/Databases.db
+/Users/cooperzhu//Library/Application Support/Google/Chrome/Default/WebStorage/803/Media Licenses/Media Licenses.db
+/Users/cooperzhu//Library/Application Support/Google/Chrome/Default/heavy_ad_intervention_opt_out.db
+/Users/cooperzhu//Library/Application Support/Google/Chrome/Default/CdmStorage.db
+/Users/cooperzhu//Library/Application Support/Google/Chrome/System Profile/heavy_ad_intervention_opt_out.db
+/Users/cooperzhu//Library/Application Support/Google/Chrome/Guest Profile/heavy_ad_intervention_opt_out.db
+find: /Users/cooperzhu//Library/Application Support/CallHistoryTransactions: Operation not permitted
+/Users/cooperzhu//Library/Application Support/Spotify/PersistentCache/mercury.db
+/Users/cooperzhu//Library/Application Support/Cisco Spark/spark_shared_store.db
+/Users/cooperzhu//Library/Application Support/Code/databases/Databases.db
+/Users/cooperzhu//Library/Application Support/Webex Meetings/AppData/CiscoMeetings.db
+/Users/cooperzhu//Library/Application Support/TurboTax Premier 2020/intuitanalytics.db
+find: /Users/cooperzhu//Library/Application Support/CloudDocs/session/db: Operation not permitted
+find: /Users/cooperzhu//Library/Application Support/com.apple.sharedfilelist: Operation not permitted
+find: /Users/cooperzhu//Library/Application Support/Knowledge: Operation not permitted
+find: /Users/cooperzhu//Library/Application Support/com.apple.TCC: Operation not permitted
+/Users/cooperzhu//Library/Application Support/TurboTax 2021/intuitanalytics.db
+find: /Users/cooperzhu//Library/Application Support/FileProvider: Operation not permitted
+find: /Users/cooperzhu//Library/Application Support/AddressBook: Operation not permitted
+find: /Users/cooperzhu//Library/Application Support/FaceTime: Operation not permitted
+/Users/cooperzhu//Library/Application Support/Slack/databases/Databases.db
+/Users/cooperzhu//Library/Application Support/remotelogging/events-IntuitIdentity-IntuitIdentity-resources-production.db
+/Users/cooperzhu//Library/Application Support/Respondus LockDown Browser/cefcache/databases/Databases.db
+find: /Users/cooperzhu//Library/Application Support/com.apple.avfoundation/Frecents: Operation not permitted
+find: /Users/cooperzhu//Library/Application Support/CallHistoryDB: Operation not permitted
+/Users/cooperzhu//Library/Application Support/Dock/desktoppicture.db
+/Users/cooperzhu//Library/Application Support/com.apple.ProtectedCloudStorage/KeysSyncingVersion3-1082900377-ProtectedCloudStorage.db
+/Users/cooperzhu//Library/Application Support/com.apple.ProtectedCloudStorage/KeysSyncingVersion3-(null)-ProtectedCloudStorage.db
+/Users/cooperzhu//Library/Application Support/com.apple.ProtectedCloudStorage/metrics.db
+/Users/cooperzhu//Library/Application Support/com.apple.ProtectedCloudStorage/PCSAnalytics.db
+/Users/cooperzhu//Library/Assistant/SiriAnalytics.db
+/Users/cooperzhu//Library/Assistant/SiriSyncItems.db
+find: /Users/cooperzhu//Library/Assistant/SiriVocabulary: Operation not permitted
+find: /Users/cooperzhu//Library/Daemon Containers: Operation not permitted
+find: /Users/cooperzhu//Library/Autosave Information: Operation not permitted
+find: /Users/cooperzhu//Library/IdentityServices: Operation not permitted
+/Users/cooperzhu//Library/WebKit/Cisco-Systems.Spark/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/com.intuit.turbotax.2022/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/com.apple.Music/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/com.intuit.turbotax.2023/WebsiteData/ResourceLoadStatistics/pcm.db
+/Users/cooperzhu//Library/WebKit/com.intuit.turbotax.2023/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/com.vmware.horizon/WebsiteData/ResourceLoadStatistics/pcm.db
+/Users/cooperzhu//Library/WebKit/com.vmware.horizon/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/WebPush/PushDatabase.db
+/Users/cooperzhu//Library/WebKit/us.zoom.xos/WebsiteData/ResourceLoadStatistics/pcm.db
+/Users/cooperzhu//Library/WebKit/us.zoom.xos/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/com.cisco.anyconnect.gui/WebsiteData/ResourceLoadStatistics/pcm.db
+/Users/cooperzhu//Library/WebKit/com.cisco.anyconnect.gui/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/com.oracle.java.Java-Updater/WebsiteData/ResourceLoadStatistics/pcm.db
+/Users/cooperzhu//Library/WebKit/com.oracle.java.Java-Updater/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/com.grammarly.ProjectLlama/WebsiteData/ResourceLoadStatistics/pcm.db
+/Users/cooperzhu//Library/WebKit/com.grammarly.ProjectLlama/WebsiteData/ResourceLoadStatistics/observations.db
+/Users/cooperzhu//Library/WebKit/com.apple.TV/WebsiteData/ResourceLoadStatistics/observations.db
+find: /Users/cooperzhu//Library/Calendars: Operation not permitted
+/Users/cooperzhu//Library/studentd/Events/LogEvents.db
+find: /Users/cooperzhu//Library/Messages: Operation not permitted
+find: /Users/cooperzhu//Library/HomeKit: Operation not permitted
+/Users/cooperzhu//Library/Keychains/3B377EBC-ABC9-5995-A150-7E348A98D2E2/com.apple.security.keychain-defaultContext.TrustedPeersHelper.db
+/Users/cooperzhu//Library/Keychains/3B377EBC-ABC9-5995-A150-7E348A98D2E2/keychain-2.db
+/Users/cooperzhu//Library/Keychains/3B377EBC-ABC9-5995-A150-7E348A98D2E2/Analytics/signin_metrics.db
+find: /Users/cooperzhu//Library/Sharing: Operation not permitted
+find: /Users/cooperzhu//Library/com.apple.aiml.instrumentation: Operation not permitted
+find: /Users/cooperzhu//Library/Mail: Operation not permitted
+find: /Users/cooperzhu//Library/Trial: Operation not permitted
+find: /Users/cooperzhu//Library/AppleMediaServices: Operation not permitted
+find: /Users/cooperzhu//Library/DuetExpertCenter: Operation not permitted
+/Users/cooperzhu//Library/com.apple.internal.ck/synched.db
+/Users/cooperzhu//Library/com.apple.internal.ck/history.db
+/Users/cooperzhu//Library/com.apple.internal.ck/main.db
+/Users/cooperzhu//Library/FrontBoard/applicationState.db
+find: /Users/cooperzhu//Library/Accounts: Operation not permitted
+find: /Users/cooperzhu//Library/Safari: Operation not permitted
+find: /Users/cooperzhu//Library/Biome: Operation not permitted
+find: /Users/cooperzhu//Library/IntelligencePlatform: Operation not permitted
+find: /Users/cooperzhu//Library/Shortcuts: Operation not permitted
+/Users/cooperzhu//Library/UnifiedAssetFramework/UAFAssetSubscriptions.db
+find: /Users/cooperzhu//Library/Mobile Documents: Operation not permitted
+/Users/cooperzhu//Library/Finance/finance_local.db
+/Users/cooperzhu//Library/Finance/finance_cloud.db
+find: /Users/cooperzhu//Library/Suggestions: Operation not permitted
+find: /Users/cooperzhu//Library/Weather: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.stocks-news: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.photolibraryd.private: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.feedback: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.accessibility.voicebanking: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.stocks: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.secure-control-center-preferences: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.chronod: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/com.apple.MailPersonaStorage: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.private.translation: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.notes.import: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.calendar: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.newsd: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.siri.userfeedbacklearning: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.tips: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.spotlight: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.ManagedSettings: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.sharingd: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.news: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.mobileslideshow.PhotosFileProvider: Operation not permitted
+/Users/cooperzhu//Library/Group Containers/group.com.apple.storekit/Library/Caches/storeUser.db
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.weather: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/com.apple.systempreferences.cache: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.feedbacklogger: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.notes: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.tipsnext: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.Safari.SandboxBroker: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.transparency: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.reminders: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.mail: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/com.apple.bird: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.DeviceActivity: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/com.apple.Home.group: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.iCloudDrive: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/com.apple.PreviewLegacySignaturesConversion: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.Photos.PhotosFileProvider: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.AppleSpell: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.mlhost: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.PegasusConfiguration: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/group.com.apple.shortcuts: Operation not permitted
+find: /Users/cooperzhu//Library/Group Containers/com.apple.MessagesLegacyTransferArchive: Operation not permitted
+/Users/cooperzhu//Library/Dictionaries/CoreDataUbiquitySupport/cooperzhu~3B377EBC-ABC9-5995-A150-7E348A98D2E2/UserDictionary/1E14CCCB-AF57-4C51-A28B-EC66A8A33A39/store/UserDictionary.db
+find: /Users/cooperzhu//Library/Containers/com.apple.CloudPhotosConfiguration/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.PressAndHold/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.freeform/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.languageassetd/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.iCal/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.siri.SiriPrivateLearningAnalytics.SiriUserSegmentation/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.stocks.detailintents/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.VoiceMemos: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.mlhost.TelemetryWorker/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.ax.KonaTTSSupport.KonaSynthesizer/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.archiveutility: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.FaceTime/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.ScreenTimeAgent/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.LighthouseBitacoraFramework.BitacoraWorker/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Home.HomeEnergyWidgets/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.mobiletimer-framework.MobileTimerIntents/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.speech.MacinTalkFramework.WardaSynthesizer.x86-64/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.weather.widget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.calculator/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.photos.ImageConversionService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.FaceTime.FaceTimeNotificationCenterService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.systempreferences.SpotlightIndexExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Photos.PhotosFileProvider/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.iWork.Numbers/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.quicklook.QuickLookUIService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CloudSharing.SPIHelper/Data: Operation not permitted
+/Users/cooperzhu//Library/Containers/com.apple.WeatherKitService/Data/Library/Caches/com.apple.WeatherKitService/Cache.db
+find: /Users/cooperzhu//Library/Containers/com.apple.iCal.CalendarWidgetExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.contacts.donation-agent/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.photolibraryd/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.siri.media-indexer/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.dp.PrivateFederatedLearning.DPMLRuntimePlugin/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.StorageManagement.MessagesHelper/Data: Operation not permitted
+/Users/cooperzhu//Library/Containers/com.apple.messages.TranscriptRenderingService/Data/Library/Caches/com.apple.messages.TranscriptRenderingService/Cache.db
+find: /Users/cooperzhu//Library/Containers/com.apple.BKAgentService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.tips.Widget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.mediastream.mstreamd/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.news.tag/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.LookupViewService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.MobileSMS.spotlight/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.tonelibraryd/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Maps/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Notes.SpotlightIndexExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.AMPDeviceDiscoveryAgent/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.systempreferences.AppleIDSettings/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.SafariPlatformSupport.Helper/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.podcasts.MacPodcastsStorageExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Safari.BrowserDataImportingService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Home: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Safari: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Keyboard-Settings.extension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.IOUIAgent/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CloudDocsDaemon.StorageManagement/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.microsoft.Powerpoint/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Safari.CacheDeleteExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.reminders.WidgetExtension/Data: Operation not permitted
+/Users/cooperzhu//Library/Containers/com.apple.ncplugin.stocks/Data/CloudKit/277661c320dd17e2bc82aaa6366d6551e4a1f4ac/Records/pcs.db
+/Users/cooperzhu//Library/Containers/com.apple.ncplugin.stocks/Data/CloudKit/539f4cadf8b7c07580a1765f20d360f55c5232d5/Records/pcs.db
+/Users/cooperzhu//Library/Containers/com.apple.ncplugin.stocks/Data/Library/Caches/com.apple.ncplugin.stocks/Cache.db
+find: /Users/cooperzhu//Library/Containers/com.apple.lighthouse.SiriCoreMetricsWorker/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.wallpaper.extension.video/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.aiml.RepackagingWorker/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.AMPArtworkAgent/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.FollowUpSettings.FollowUpSettingsExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.iBooksX.DiskSpaceEfficiency/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.messages.StorageManagementExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.clock.WorldClockWidget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.reminders.macOSIntentsExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.findmy.FindMyWidgetPeople/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.microsoft.Word/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.PeopleViewService.PeopleWidget-macOS/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.news.widget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.STMExtension.OtherUsers/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.mobileslideshow.photospicker/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.PeopleViewService.SelectPerson-iOS/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.AutoFillPanelService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.speech.MacinTalkFramework.MacinTalkAUSP/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.QuickLookThumbnailing.extension.ThumbnailExtension-macOS/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.photoanalysisd/Data: Operation not permitted
+/Users/cooperzhu//Library/Containers/com.apple.iChat/Data/Library/Caches/com.apple.iChat/Cache.db
+/Users/cooperzhu//Library/Containers/com.apple.iChat/Data/Library/Caches/com.apple.Messages/URLCache/Cache.db
+find: /Users/cooperzhu//Library/Containers/com.apple.Photos.PhotosReliveWidget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.notificationcenterui/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.TV.TVStorageExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.findmy.FindMyWidgetIntentsPeople/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.mail: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.MailShortcutsExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.DataDetectorsLocalSources/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.FamilyControlsAgent/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.siri.metrics.ExperimentationExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.MobileSMS: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.PlatformSSOToken/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CalendarWeatherKitService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Music.MusicCacheExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.StorageManagement.CloudStorageHelper/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.calendar.CalendarFocusConfigurationExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.findmy.FindMyWidgetIntentsItems/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Photos.PhotosReliveWidgetIntents/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.AppStore/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.news.widgetintents/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.microsoft.Office365ServiceV2/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Siri/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.AppleMediaServicesUI.UtilityExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Notes: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.shortcuts.ShortcutsWidget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.STMExtension.Trash/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Batteries.BatteriesAvocadoWidgetExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.MailCacheDelete/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.STMExtension.iOSFiles/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.STMExtension.Applications/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.mlhost.CloudWorker/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.siri.metrics.DevicePropertiesExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Dictionary/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.TextEdit/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CryptoTokenKit.pivtoken/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.windowmanager.ShowDesktopEducation/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Music.MusicStorageExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Photos.StorageManagementExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.geod/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.iCal.FaceTimeExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.news: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.TV.TVCacheExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.speech.SpeechSynthesisServerXPC/Data: Operation not permitted
+/Users/cooperzhu//Library/Containers/com.apple.CalendarAgent/Data/Library/Caches/com.apple.CalendarAgent/Cache.db
+find: /Users/cooperzhu//Library/Containers/com.apple.CaptiveNetworkAssistant/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.STMExtension.Mail/Data: Operation not permitted
+/Users/cooperzhu//Library/Containers/com.apple.AppleMediaServicesUI.SpyglassPurchases/Data/file/Users/cooperzhu/Library/Containers/com.apple.AppleMediaServicesUI.SpyglassPurchases/Data/Library/Caches/Cache.db
+/Users/cooperzhu//Library/Containers/com.apple.AppleMediaServicesUI.SpyglassPurchases/Data/Library/Caches/com.apple.AppleMediaServicesUI.SpyglassPurchases/Cache.db
+find: /Users/cooperzhu//Library/Containers/com.apple.texttospeech.SiriAUSP/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.STMExtension.Developer/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.routined/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.findmy.FindMyWidgetItems/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.microsoft.Excel/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.corerecents.recentsd/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.STMExtension.GarageBand/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.stocks.widget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetIntentsExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Notes.WidgetExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.systempreferences.GeneralSettings/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Safari.SafariWidgetExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.ContinuityCaptureOnboardingUI/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.LinkedNotesUIService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Preview/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.UsageTrackingAgent/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Home.HomeWidget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Home.HomeWidget.Interactive/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.biome.BiomeStreams.BiomeLighthousePlugin/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CoreRoutine.helperservice/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.siri.metrics.MetricsExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CryptoTokenKit.ctkcard.ctkcardtoken/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.stocks: Operation not permitted
+/Users/cooperzhu//Library/Containers/com.microsoft.errorreporting/Data/Library/Application Support/Microsoft Error Reporting/AriaStorage.db
+/Users/cooperzhu//Library/Containers/com.microsoft.errorreporting/Data/Library/Caches/com.microsoft.errorreporting/Cache.db
+find: /Users/cooperzhu//Library/Containers/com.apple.Safari.SafariLinkExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.quicklook.ui.helper/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.AvatarUI.AvatarPickerMemojiPicker/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.SiriNCService/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Notes.IntentsExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.ax.MauiTTSSupport.MauiAUSP/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.weather.WeatherIntents/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.AirPlayUIAgent/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.AddressBook/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.voicebankingd/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.systempreferences/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CloudDocs.iCloudDriveFileProvider/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.podcasts.widget/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.mediaanalysisd/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.OSDUIHelper/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.CalendarWidget.IntentsExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.MobileSMS.MessagesActionExtension/Data: Operation not permitted
+find: /Users/cooperzhu//Library/Containers/com.apple.Family/Data: Operation not permitted
+find: /Users/cooperzhu//Library/ContainerManager: Operation not permitted
+find: /Users/cooperzhu//Library/PersonalizationPortrait: Operation not permitted
+/Users/cooperzhu//Library/Photos/Libraries/Syndication.photoslibrary/database/photos.db
+/Users/cooperzhu//Library/Photos/Libraries/Syndication.photoslibrary/database/metaSchema.db
+/Users/cooperzhu//Library/Photos/Libraries/Syndication.photoslibrary/private/com.apple.mediaanalysisd/MediaAnalysis/mediaanalysis.db
+/Users/cooperzhu//Library/KeyboardServices/TextReplacements.db
+find: /Users/cooperzhu//Library/Metadata/CoreSpotlight: Operation not permitted
+find: /Users/cooperzhu//Library/Metadata/com.apple.IntelligentSuggestions: Operation not permitted
+/Users/cooperzhu//Library/Jupyter/nbsignatures.db
+find: /Users/cooperzhu//Library/VoiceTrigger/SAT: Operation not permitted
+find: /Users/cooperzhu//Library/Reminders: Operation not permitted
+find: /Users/cooperzhu//Library/Cookies: Operation not permitted
+/Users/cooperzhu//Library/Keyboard/AutocorrectionRejections.db
+/Users/cooperzhu//Library/Keyboard/VulgarWordUsage.db
+find: /Users/cooperzhu//Library/CoreFollowUp: Operation not permitted
+find: /Users/cooperzhu//Library/StatusKit: Operation not permitted
+find: /Users/cooperzhu//Library/DoNotDisturb: Operation not permitted
+/Users/cooperzhu//Library/Caches/com.apple.finder/Cache.db
+/Users/cooperzhu//Library/Caches/familycircled/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.helpd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.AddressBookSourceSync/Cache.db
+/Users/cooperzhu//Library/Caches/com.google.GoogleUpdater/Cache.db
+/Users/cooperzhu//Library/Caches/GeoServices/ReqCount.db
+/Users/cooperzhu//Library/Caches/com.apple.transparencyd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.Music/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.touristd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.icloud.FMIPClientXPCService/Cache.db
+/Users/cooperzhu//Library/Caches/com.intuit.turbotax.2023/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.storekitagent/Cache.db
+find: /Users/cooperzhu//Library/Caches/com.apple.HomeKit: Operation not permitted
+/Users/cooperzhu//Library/Caches/TurboTax 2022/Network/Cache.db
+find: /Users/cooperzhu//Library/Caches/com.apple.HomeKit.configurations: Operation not permitted
+/Users/cooperzhu//Library/Caches/com.apple.InstallAssistant.macOSBigSur/Cache.db
+/Users/cooperzhu//Library/Caches/com.google.Keystone/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.mediastream.mstreamd/Cache.db
+find: /Users/cooperzhu//Library/Caches/CloudKit: Operation not permitted
+/Users/cooperzhu//Library/Caches/TurboTax 2023/Network/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.mlruntimed/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.installer.osinstallersetupd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.akd/Cache.db
+find: /Users/cooperzhu//Library/Caches/com.apple.Safari: Operation not permitted
+/Users/cooperzhu//Library/Caches/com.spotify.installer/Cache.db
+/Users/cooperzhu//Library/Caches/MiniLauncher/Cache.db
+/Users/cooperzhu//Library/Caches/com.bluejeansnet.Blue/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.iBooksX/CommerceRequestCache/Cache.db
+/Users/cooperzhu//Library/Caches/GameKit/sessions-_575908153b54c511503e772762b0863a.db
+/Users/cooperzhu//Library/Caches/com.microsoft.autoupdate.fba/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.amp.accounts.pluginhelper/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.assistant_service/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.Spotlight/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.newsd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.businessservicesd/Cache.db
+/Users/cooperzhu//Library/Caches/com.spotify.client.helper/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.appstoreagent/storeSystem.db
+/Users/cooperzhu//Library/Caches/com.apple.appstoreagent/storeUser.db
+/Users/cooperzhu//Library/Caches/com.apple.appstoreagent/Cache.db
+/Users/cooperzhu//Library/Caches/com.Respondus.LockDownBrowser/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.accountsd/Cache.db
+/Users/cooperzhu//Library/Caches/knowledge-agent/Cache.db
+/Users/cooperzhu//Library/Caches/com.microsoft.OneDriveStandaloneUpdater/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.nbagent/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.NewDeviceOutreach/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.tipsd/Cache.db
+/Users/cooperzhu//Library/Caches/com.webex.meetingmanager/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.itunescloudd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.AOSPushRelay/Cache.db
+find: /Users/cooperzhu//Library/Caches/com.apple.findmy.fmfcore: Operation not permitted
+/Users/cooperzhu//Library/Caches/JetBrains/PyCharmCE2021.1/icons-v2.db
+/Users/cooperzhu//Library/Caches/com.apple.AppleMediaServicesUI/Cache.db
+/Users/cooperzhu//Library/Caches/com.microsoft.autoupdate2/Cache.db
+/Users/cooperzhu//Library/Caches/TurboTax Premier 2020/Network/Cache.db
+find: /Users/cooperzhu//Library/Caches/com.apple.containermanagerd: Operation not permitted
+/Users/cooperzhu//Library/Caches/com.apple.appstore/CommerceRequestCache/Cache.db
+/Users/cooperzhu//Library/Caches/JetPackCache/store.db
+/Users/cooperzhu//Library/Caches/org.herf.Flux/Cache.db
+/Users/cooperzhu//Library/Caches/us.zoom.xos/Cache.db
+/Users/cooperzhu//Library/Caches/chrome_crashpad_handler/Cache.db
+/Users/cooperzhu//Library/Caches/mbuseragent/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.passd/Cache.db
+/Users/cooperzhu//Library/Caches/com.cisco.webex.webexmta/Cache.db
+/Users/cooperzhu//Library/Caches/com.intuit.turbotax.2020/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.AppleMediaServices/Engagement/ServerDataCache/1082900377/data.db
+/Users/cooperzhu//Library/Caches/com.apple.AppleMediaServices/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.remindd/com.apple.dataaccessd.0DE4FD6F-D5D5-458E-A43A-1A6310B82DBB/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.remindd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.assistantd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.helpviewer/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.imfoundation.IMRemoteURLConnectionAgent/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.dataaccess.dataaccessd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.SystemProfiler/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.parsecd/EngagedCompletions/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.icloud.fmfd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.Family-Settings.extension/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.installer/Cache.db
+/Users/cooperzhu//Library/Caches/TurboTax 2021/Network/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.cloudd/Cache.db
+/Users/cooperzhu//Library/Caches/com.microsoft.VSCode/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.amsaccountsd/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.iad/iAdCore/com.apple.iad.persistence.db
+find: /Users/cooperzhu//Library/Caches/FamilyCircle: Operation not permitted
+/Users/cooperzhu//Library/Caches/AMSDataMigratorTool/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.AMPLibraryAgent/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.appstorecomponentsd/Cache.db
+/Users/cooperzhu//Library/Caches/com.tinyspeck.slackmacgap/Cache.db
+/Users/cooperzhu//Library/Caches/askpermissiond/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.iTunes/CommerceRequestCache/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.siri-distributed-evaluation/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.maps.destinationd/Cache.db
+/Users/cooperzhu//Library/Caches/storedownloadd/Cache.db
+find: /Users/cooperzhu//Library/Caches/com.apple.homed: Operation not permitted
+/Users/cooperzhu//Library/Caches/com.oracle.java.Java-Updater/Cache.db
+/Users/cooperzhu//Library/Caches/com.cisco.webex.Cisco-WebEx-Start/Cache.db
+find: /Users/cooperzhu//Library/Caches/com.apple.findmy.fmipcore: Operation not permitted
+/Users/cooperzhu//Library/Caches/com.grammarly.ProjectLlama/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.translationd/Cache.db
+/Users/cooperzhu//Library/Caches/com.spotify.client/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.ctcategories.service/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.TV/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.iCloudNotificationAgent/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.AMPDevicesAgent/Cache.db
+/Users/cooperzhu//Library/Caches/Oracle.MacJREInstaller/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.systempreferences/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.amsengagementd/Cache.db
+find: /Users/cooperzhu//Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+/Users/cooperzhu//Library/Caches/com.apple.iCloudHelper/Cache.db
+/Users/cooperzhu//Library/Caches/com.apple.XprotectFramework.AnalysisService/Cache.db
+/Users/cooperzhu//homework.db
+find: /Users/cooperzhu//.Trash: Operation not permitted
+find: /Users/cooperzhu//Documents: Operation not permitted
+/Users/cooperzhu//Downloads/homework.db
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db
+
+v1.0.0 1f98600c2c
+Enter ".help" for usage hints.
+D PRAGMA database_list;
+┌───────┬──────────┬─────────────┐
+│  seq  │   name   │    file     │
+│ int64 │ varchar  │   varchar   │
+├───────┼──────────┼─────────────┤
+│  1084 │ homework │ homework.db │
+└───────┴──────────┴─────────────┘
+D PRAGMA show_tables;
+┌─────────┐
+│  name   │
+│ varchar │
+├─────────┤
+│ 0 rows  │
+└─────────┘
+D SELECT * FROM sqlite_master WHERE type='table';
+┌─────────┬─────────┬──────────┬──────────┬─────────┐
+│  type   │  name   │ tbl_name │ rootpage │   sql   │
+│ varchar │ varchar │ varchar  │  int32   │ varchar │
+├─────────┴─────────┴──────────┴──────────┴─────────┤
+│                      0 rows                       │
+└───────────────────────────────────────────────────┘
+D exit
+  QUIT;
+Parser Error: syntax error at or near "exit"
+LINE 1: exit
+        ^
+D .help
+.bail on|off             Stop after hitting an error.  Default OFF
+.binary on|off           Turn binary output on or off.  Default OFF
+.cd DIRECTORY            Change the working directory to DIRECTORY
+.changes on|off          Show number of rows changed by SQL
+.check GLOB              Fail if output since .testcase does not match
+.columns                 Column-wise rendering of query results
+.constant ?COLOR?        Sets the syntax highlighting color used for constant values
+.constantcode ?CODE?     Sets the syntax highlighting terminal code used for constant values
+.databases               List names and files of attached databases
+.dump ?TABLE?            Render database content as SQL
+.echo on|off             Turn command echo on or off
+.excel                   Display the output of next command in spreadsheet
+.edit                    Opens an external text editor to edit a query.
+.exit ?CODE?             Exit this program with return-code CODE
+.explain ?on|off|auto?   Change the EXPLAIN formatting mode.  Default: auto
+.fullschema ?--indent?   Show schema and the content of sqlite_stat tables
+.headers on|off          Turn display of headers on or off
+.help ?-all? ?PATTERN?   Show help text for PATTERN
+.highlight [on|off]      Toggle syntax highlighting in the shell on/off
+.import FILE TABLE       Import data from FILE into TABLE
+.indexes ?TABLE?         Show names of indexes
+.keyword ?COLOR?         Sets the syntax highlighting color used for keywords
+.keywordcode ?CODE?      Sets the syntax highlighting terminal code used for keywords
+.lint OPTIONS            Report potential schema issues.
+.log FILE|off            Turn logging on or off.  FILE can be stderr/stdout
+.maxrows COUNT           Sets the maximum number of rows for display (default: 40). Only for duckbox mode.
+.maxwidth COUNT          Sets the maximum width in characters. 0 defaults to terminal width. Only for duckbox mode.
+.mode MODE ?TABLE?       Set output mode
+.nullvalue STRING        Use STRING in place of NULL values
+.once ?OPTIONS? ?FILE?   Output for the next SQL command only to FILE
+.open ?OPTIONS? ?FILE?   Close existing database and reopen FILE
+.output ?FILE?           Send output to FILE or stdout if FILE is omitted
+.parameter CMD ...       Manage SQL parameter bindings
+.print STRING...         Print literal STRING
+.prompt MAIN CONTINUE    Replace the standard prompts
+.quit                    Exit this program
+.read FILE               Read input from FILE
+.rows                    Row-wise rendering of query results (default)
+.schema ?PATTERN?        Show the CREATE statements matching PATTERN
+.separator COL ?ROW?     Change the column and row separators
+.sha3sum ...             Compute a SHA3 hash of database content
+.shell CMD ARGS...       Run CMD ARGS... in a system shell
+.show                    Show the current values for various settings
+.system CMD ARGS...      Run CMD ARGS... in a system shell
+.tables ?TABLE?          List names of tables matching LIKE pattern TABLE
+.testcase NAME           Begin redirecting output to 'testcase-out.txt'
+.timer on|off            Turn SQL timer on or off
+.width NUM1 NUM2 ...     Set minimum column widths for columnar output
+D .quit
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db -c "PRAGMA show_tables;"
+
+┌─────────┐
+│  name   │
+│ varchar │
+├─────────┤
+│ 0 rows  │
+└─────────┘
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb new_homework.db
+
+v1.0.0 1f98600c2c
+Enter ".help" for usage hints.
+D -- Load CSV data
+D CREATE TABLE central_park_weather AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/central_park_weather.csv');
+D CREATE TABLE fhv_bases AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/fhv_bases.csv');
+D 
+D -- Load Parquet data
+D CREATE TABLE fhvhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet');
+CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+
+-- Verify the tables
+PRAGMA show_tables;
+
+100% ▕████████████████████████████████████████████████████████████▏ 
+D CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+D CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+D CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+100% ▕████████████████████████████████████████████████████████████▏ 
+D 
+D -- Verify the tables
+D PRAGMA show_tables;
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ yellow_tripdata      │
+└──────────────────────┘
+D 
+D .exit
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano ~/Downloads/dump_raw_schemas.sql
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb new_homework.db -c ".read ~/Downloads/dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+Error: cannot open "~/Downloads/dump_raw_schemas.sql"
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb new_homework.db -c ".read /Users/cooperzhu/Downloads/dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+Catalog Error: Table with name citibike_tripdata does not exist!
+Did you mean "fhv_tripdata"?
+Catalog Error: Table with name taxi_zones does not exist!
+Did you mean "temp.information_schema.tables"?
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb homework.db
+v1.0.0 1f98600c2c
+Enter ".help" for usage hints.
+D .tables
+D SHOW TABLES;
+┌─────────┐
+│  name   │
+│ varchar │
+├─────────┤
+│ 0 rows  │
+└─────────┘
+D .schema
+D .exit
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db
+
+v1.0.0 1f98600c2c
+Enter ".help" for usage hints.
+D -- Load CSV data
+D CREATE TABLE central_park_weather AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/central_park_weather.csv');
+CREATE TABLE fhv_bases AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/fhv_bases.csv');
+
+-- Load Parquet data and verify loading process
+CREATE TABLE fhvhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet');
+SELECT COUNT(*) FROM fhvhv_tripdata;  -- Verify data loading
+
+CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+SELECT COUNT(*) FROM fhv_tripdata;  -- Verify data loading
+
+CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+SELECT COUNT(*) FROM green_tripdata;  -- Verify data loading
+
+CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+SELECT COUNT(*) FROM yellow_tripdata;  -- Verify data loading
+
+-- Verify the tables
+PRAGMA show_tables;
+
+-- Exit DuckDB shell
+.exit
+D CREATE TABLE fhv_bases AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/fhv_bases.csv');
+D 
+D -- Load Parquet data and verify loading process
+D CREATE TABLE fhvhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet');
+SELECT COUNT(*) FROM fhvhv_tripdata;  -- Verify data loading
+
+CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+SELECT COUNT(*) FROM fhv_tripdata;  -- Verify data loading
+
+CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+SELECT COUNT(*) FROM green_tripdata;  -- Verify data loading
+
+CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+SELECT COUNT(*) FROM yellow_tripdata;  -- Verify data loading
+
+-- Verify the tables
+PRAGMA show_tables;
+
+-- Exit DuckDB shell
+.exit
+
+100% ▕████████████████████████████████████████████████████████████▏ 
+D SELECT COUNT(*) FROM fhvhv_tripdata;  -- Verify data loading
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│     32182272 │
+└──────────────┘
+D 
+D CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+D SELECT COUNT(*) FROM fhv_tripdata;  -- Verify data loading
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      3008649 │
+└──────────────┘
+D 
+D CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+D SELECT COUNT(*) FROM green_tripdata;  -- Verify data loading
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│       238718 │
+└──────────────┘
+D 
+D CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+100% ▕████████████████████████████████████████████████████████████▏ 
+D SELECT COUNT(*) FROM yellow_tripdata;  -- Verify data loading
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      5454972 │
+└──────────────┘
+D 
+D -- Verify the tables
+D PRAGMA show_tables;
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ yellow_tripdata      │
+└──────────────────────┘
+D 
+D -- Exit DuckDB shell
+D .exit
+(env) cooperzhu@Coopers-MacBook-Air Downloads % 
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db
+
+v1.0.0 1f98600c2c
+Enter ".help" for usage hints.
+D nano /Users/cooperzhu/Downloads/load_data.sql
+  .exit
+  .quit
+  .exit
+  QUIT
+  .help
+  
+D .exit
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano /Users/cooperzhu/Downloads/load_data.sql
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano /Users/cooperzhu/Downloads/dump_raw_schemas.sql
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/load_data.sql"
+
+Catalog Error: Table with name "central_park_weather" already exists!
+Catalog Error: Table with name "fhv_bases" already exists!
+Catalog Error: Table with name "fhvhv_tripdata" already exists!
+Catalog Error: Table with name "fhv_tripdata" already exists!
+Catalog Error: Table with name "green_tripdata" already exists!
+Catalog Error: Table with name "yellow_tripdata" already exists!
+100% ▕████████████████████████████████████████████████████████████▏ 
+100% ▕████████████████████████████████████████████████████████████▏ 
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ taxi_zones           │
+│ yellow_tripdata      │
+└──────────────────────┘
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+Catalog Error: Table with name citibike_tripdata does not exist!
+Did you mean "fhv_tripdata"?
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano /Users/cooperzhu/Downloads/load_data.sql
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano /Users/cooperzhu/Downloads/dump_raw_schemas.sql
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/load_data.sql"
+
+Catalog Error: Table with name "central_park_weather" already exists!
+Catalog Error: Table with name "fhv_bases" already exists!
+Catalog Error: Table with name "fhvhv_tripdata" already exists!
+Catalog Error: Table with name "fhv_tripdata" already exists!
+Catalog Error: Table with name "green_tripdata" already exists!
+Catalog Error: Table with name "yellow_tripdata" already exists!
+100% ▕████████████████████████████████████████████████████████████▏ 
+Catalog Error: Table with name "taxi_zones" already exists!
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ citibike_tripdata    │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ taxi_zones           │
+│ yellow_tripdata      │
+└──────────────────────┘
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/load_data.sql"
+
+Catalog Error: Table with name "central_park_weather" already exists!
+Catalog Error: Table with name "fhv_bases" already exists!
+Catalog Error: Table with name "fhvhv_tripdata" already exists!
+Catalog Error: Table with name "fhv_tripdata" already exists!
+Catalog Error: Table with name "green_tripdata" already exists!
+Catalog Error: Table with name "yellow_tripdata" already exists!
+Catalog Error: Table with name "citibike_tripdata" already exists!
+Catalog Error: Table with name "taxi_zones" already exists!
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ citibike_tripdata    │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ taxi_zones           │
+│ yellow_tripdata      │
+└──────────────────────┘
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db
+
+v1.0.0 1f98600c2c
+Enter ".help" for usage hints.
+D -- Load CSV data
+D CREATE TABLE central_park_weather AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/central_park_weather.csv');
+Catalog Error: Table with name "central_park_weather" already exists!
+D CREATE TABLE fhv_bases AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/fhv_bases.csv');
+Catalog Error: Table with name "fhv_bases" already exists!
+D 
+D -- Load Parquet data and verify loading process
+D CREATE TABLE fhvhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet');
+Catalog Error: Table with name "fhvhv_tripdata" already exists!
+D SELECT COUNT(*) FROM fhvhv_tripdata;
+
+CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+SELECT COUNT(*) FROM fhv_tripdata;
+
+CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+SELECT COUNT(*) FROM green_tripdata;
+
+CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+SELECT COUNT(*) FROM yellow_tripdata;
+
+-- Load Citibike data (assuming it's a compressed CSV file)
+CREATE TABLE citibike_tripdata AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/citibike-tripdata.csv.gz');
+SELECT COUNT(*) FROM citibike_tripdata;
+
+-- Handling nested files for taxi zones
+INSTALL spatial; -- Only need to do this once
+LOAD spatial;
+CREATE TABLE taxi_zones AS SELECT * FROM ST_Read('/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp');
+
+-- Verify the tables
+PRAGMA show_tables;
+
+-┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│     32182272 │
+└──────────────┘
+D 
+D CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+Catalog Error: Table with name "fhv_tripdata" already exists!
+D SELECT COUNT(*) FROM fhv_tripdata;
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      3008649 │
+└──────────────┘
+D 
+D CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+Catalog Error: Table with name "green_tripdata" already exists!
+D SELECT COUNT(*) FROM green_tripdata;
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│       238718 │
+└──────────────┘
+D 
+D CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+Catalog Error: Table with name "yellow_tripdata" already exists!
+D SELECT COUNT(*) FROM yellow_tripdata;
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      5454972 │
+└──────────────┘
+D 
+D -- Load Citibike data (assuming it's a compressed CSV file)
+D CREATE TABLE citibike_tripdata AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/citibike-tripdata.csv.gz');
+SELECT COUNT(*) FROM citibike_tripdata;
+
+-- Handling nested files for taxi zones
+INSTALL spatial; -- Only need to do this once
+LOAD spatial;
+CREATE TABLE taxi_zones AS SELECT * FROM ST_Read('/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp');
+
+-- Verify the tables
+PRAGMA show_tables;
+
+-- Quit DuckDB shell
+QUIT;
+Catalog Error: Table with name "citibike_tripdata" already exists!
+D SELECT COUNT(*) FROM citibike_tripdata;
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      4780363 │
+└──────────────┘
+D 
+D -- Handling nested files for taxi zones
+D INSTALL spatial; -- Only need to do this once
+D LOAD spatial;
+D CREATE TABLE taxi_zones AS SELECT * FROM ST_Read('/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp');
+Catalog Error: Table with name "taxi_zones" already exists!
+D 
+D -- Verify the tables
+D PRAGMA show_tables;
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ citibike_tripdata    │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ taxi_zones           │
+│ yellow_tripdata      │
+└──────────────────────┘
+D 
+D -- Quit DuckDB shell
+D QUIT;
+Parser Error: syntax error at or near "QUIT"
+LINE 1: QUIT;
+        ^
+D .quit
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db
+
+v1.0.0 1f98600c2c
+Enter ".help" for usage hints.
+D -- Load CSV data
+D CREATE TABLE central_park_weather AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/central_park_weather.csv');
+Catalog Error: Table with name "central_park_weather" already exists!
+D CREATE TABLE fhv_bases AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/fhv_bases.csv');
+Catalog Error: Table with name "fhv_bases" already exists!
+D 
+D -- Load Parquet data
+D CREATE TABLE fhvhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet');
+Catalog Error: Table with name "fhvhv_tripdata" already exists!
+D CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+Catalog Error: Table with name "fhv_tripdata" already exists!
+D CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+Catalog Error: Table with name "green_tripdata" already exists!
+D CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+Catalog Error: Table with name "yellow_tripdata" already exists!
+D 
+D -- Load Citibike data (assuming it's a compressed CSV file)
+D CREATE TABLE citibike_tripdata AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/citibike-tripdata.csv.gz');
+
+-- Handling nested files for taxi zones (assuming shapefile components)
+-- Example using the SHP extension of DuckDB (requires the extension to be loaded)
+INSTALL spatial; -- Only need to do this once
+LOAD spatial;
+
+-- Import the shapefile (assuming all related files are in the same directory)
+CREATE TABLE taxi_zones AS SELECT * FROM ST_Read('/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp');
+
+-- Verify the tables
+PRAGMA show_tables;
+Catalog Error: Table with name "citibike_tripdata" already exists!
+D 
+D -- Handling nested files for taxi zones (assuming shapefile components)
+D -- Example using the SHP extension of DuckDB (requires the extension to be loaded)
+D INSTALL spatial; -- Only need to do this once
+D LOAD spatial;
+D 
+D -- Import the shapefile (assuming all related files are in the same directory)
+D CREATE TABLE taxi_zones AS SELECT * FROM ST_Read('/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp');
+Catalog Error: Table with name "taxi_zones" already exists!
+D 
+D -- Verify the tables
+D PRAGMA show_tables;
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ citibike_tripdata    │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ taxi_zones           │
+│ yellow_tripdata      │
+└──────────────────────┘
+D .exit
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c "PRAGMA show_tables;"
+
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ citibike_tripdata    │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ taxi_zones           │
+│ yellow_tripdata      │
+└──────────────────────┘
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c "SELECT COUNT(*) FROM central_park_weather;"
+duckdb /Users/cooperzhu/my_database.db -c "SELECT COUNT(*) FROM fhv_bases;"
+duckdb /Users/cooperzhu/my_database.db -c "SELECT COUNT(*) FROM fhvhv_tripdata;"
+duckdb /Users/cooperzhu/my_database.db -c "SELECT COUNT(*) FROM fhv_tripdata;"
+duckdb /Users/cooperzhu/my_database.db -c "SELECT COUNT(*) FROM green_tripdata;"
+duckdb /Users/cooperzhu/my_database.db -c "SELECT COUNT(*) FROM yellow_tripdata;"
+duckdb /Users/cooperzhu/my_database.db -c "SELECT COUNT(*) FROM citibike_tripdata;"
+duckdb /Users/cooperzhu/my_database.db -c "SELECT COUNT(*) FROM taxi_zones;"
+
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│         2984 │
+└──────────────┘
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│         1097 │
+└──────────────┘
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│     32182272 │
+└──────────────┘
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      3008649 │
+└──────────────┘
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│       238718 │
+└──────────────┘
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      5454972 │
+└──────────────┘
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      4780363 │
+└──────────────┘
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│          263 │
+└──────────────┘
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano /Users/cooperzhu/Downloads/dump_raw_schemas.sql
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/load_data.sql"
+
+Catalog Error: Table with name "central_park_weather" already exists!
+Catalog Error: Table with name "fhv_bases" already exists!
+Catalog Error: Table with name "fhvhv_tripdata" already exists!
+Catalog Error: Table with name "fhv_tripdata" already exists!
+Catalog Error: Table with name "green_tripdata" already exists!
+Catalog Error: Table with name "yellow_tripdata" already exists!
+Catalog Error: Table with name "citibike_tripdata" already exists!
+Catalog Error: Table with name "taxi_zones" already exists!
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ citibike_tripdata    │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ taxi_zones           │
+│ yellow_tripdata      │
+└──────────────────────┘
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db
+
+v1.0.0 1f98600c2c
+Enter ".help" for usage hints.
+D -- Load CSV data
+D CREATE TABLE central_park_weather AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/central_park_weather.csv');
+Catalog Error: Table with name "central_park_weather" already exists!
+D CREATE TABLE fhv_bases AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/fhv_bases.csv');
+Catalog Error: Table with name "fhv_bases" already exists!
+D 
+D -- Load Parquet data and verify loading process
+D CREATE TABLE fhvhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhvhv_tripdata.parquet');
+Catalog Error: Table with name "fhvhv_tripdata" already exists!
+D SELECT COUNT(*) FROM fhvhv_tripdata;
+
+CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+SELECT COUNT(*) FROM fhv_tripdata;
+
+CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+SELECT COUNT(*) FROM green_tripdata;
+
+CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+SELECT COUNT(*) FROM yellow_tripdata;
+
+-- Load Citibike data (assuming it's a compressed CSV file)
+CREATE TABLE citibike_tripdata AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/citibike-tripdata.csv.gz');
+SELECT COUNT(*) FROM citibike_tripdata;
+
+-- Handling nested files for taxi zones
+INSTALL spatial; -- Only need to do this once
+LOAD spatial;
+CREATE TABLE taxi_zones AS SELECT * FROM ST_Read('/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp');
+
+-- Verify the tables
+PRAGMA show_tables;
+
+-┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│     32182272 │
+└──────────────┘
+D 
+D CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/fhv_tripdata.parquet');
+Catalog Error: Table with name "fhv_tripdata" already exists!
+D SELECT COUNT(*) FROM fhv_tripdata;
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      3008649 │
+└──────────────┘
+D 
+D CREATE TABLE green_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/green_tripdata.parquet');
+Catalog Error: Table with name "green_tripdata" already exists!
+D SELECT COUNT(*) FROM green_tripdata;
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│       238718 │
+└──────────────┘
+D 
+D CREATE TABLE yellow_tripdata AS SELECT * FROM read_parquet('/usr/local/share/zsh/site-functions/data/taxi/yellow_tripdata.parquet');
+Catalog Error: Table with name "yellow_tripdata" already exists!
+D SELECT COUNT(*) FROM yellow_tripdata;
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      5454972 │
+└──────────────┘
+D 
+D -- Load Citibike data (assuming it's a compressed CSV file)
+D CREATE TABLE citibike_tripdata AS SELECT * FROM read_csv_auto('/usr/local/share/zsh/site-functions/data/citibike-tripdata.csv.gz');
+SELECT COUNT(*) FROM citibike_tripdata;
+
+-- Handling nested files for taxi zones
+INSTALL spatial; -- Only need to do this once
+LOAD spatial;
+CREATE TABLE taxi_zones AS SELECT * FROM ST_Read('/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp');
+
+-- Verify the tables
+PRAGMA show_tables;
+
+-- Exit DuckDB shell
+.exit
+Catalog Error: Table with name "citibike_tripdata" already exists!
+D SELECT COUNT(*) FROM citibike_tripdata;
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│      4780363 │
+└──────────────┘
+D 
+D -- Handling nested files for taxi zones
+D INSTALL spatial; -- Only need to do this once
+D LOAD spatial;
+D CREATE TABLE taxi_zones AS SELECT * FROM ST_Read('/usr/local/share/zsh/site-functions/data/taxi_zones/taxi_zones.shp');
+Catalog Error: Table with name "taxi_zones" already exists!
+D 
+D -- Verify the tables
+D PRAGMA show_tables;
+┌──────────────────────┐
+│         name         │
+│       varchar        │
+├──────────────────────┤
+│ central_park_weather │
+│ citibike_tripdata    │
+│ fhv_bases            │
+│ fhv_tripdata         │
+│ fhvhv_tripdata       │
+│ green_tripdata       │
+│ taxi_zones           │
+│ yellow_tripdata      │
+└──────────────────────┘
+D 
+D -- Exit DuckDB shell
+D .exit
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano /Users/cooperzhu/Downloads/dump_raw_schemas.sql
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % duckdb /Users/cooperzhu/my_database.db -c ".read /Users/cooperzhu/Downloads/dump_raw_schemas.sql" > /Users/cooperzhu/Desktop/raw_schemas.txt
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % python myapp.py > output.txt
+
+python: can't open file 'myapp.py': [Errno 2] No such file or directory
+(env) cooperzhu@Coopers-MacBook-Air Downloads % nano myapp.py
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % python myapp.py > output.txt
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % cat output.txt
+
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % history > /Users/cooperzhu/Desktop/terminal_history.txt
+
+(env) cooperzhu@Coopers-MacBook-Air Downloads % script /Users/cooperzhu/Desktop/terminal_output.txt
+
+Script started, output file is /Users/cooperzhu/Desktop/terminal_output.txt
+cooperzhu@Coopers-MacBook-Air Downloads % echo $SHELL
+
+/bin/zsh
+cooperzhu@Coopers-MacBook-Air Downloads % history -a  # Append the current session's history to the history file
+history > /Users/cooperzhu/Desktop/terminal_history.txt
+
+quote> quit
+quote> quit;
+quote> 
+cooperzhu@Coopers-MacBook-Air Downloads % history -a  # This will not cause the quote issue
+
+fc: event not found: #
+cooperzhu@Coopers-MacBook-Air Downloads % history -a
+
+  837  pip uninstall duckdb
+  838  pip install duckdb
+  839  pip install duckdb --upgrade 
+  840  pip list
+  841  aws configure\n
+  842  python3 -m venv env
+  843  source env/bin/activate
+  844  brew install awscli\n
+  845  python3 -m venv env
+  846  source env/bin/activate
+  847  aws configure\n
+  848  aws s3 cp s3://cmu-95797-23m2 /local/path/to/destination --recursive\n
+  849  brew install awscli\n
+  850  echo $SHELL\n
+  851  history -a  # Append the current session's history to the history file\nhistory > /Users/cooperzhu/Desktop/terminal_history.txt\n\nquit\nquit;
+  852  history -a  # This will not cause the quote issue\n
+cooperzhu@Coopers-MacBook-Air Downloads % nano myapp.py
+
+cooperzhu@Coopers-MacBook-Air Downloads % python myapp.py > output.txt
+
+cooperzhu@Coopers-MacBook-Air Downloads % script -f output.txt
+
+script: illegal option -- f
+usage: script [-aeFkpqr] [-t time] [file [command ...]]
+       script -p [-deq] [-T fmt] [file]
+cooperzhu@Coopers-MacBook-Air Downloads % script output.txt
+
+Script started, output file is output.txt
+cooperzhu@Coopers-MacBook-Air Downloads %
