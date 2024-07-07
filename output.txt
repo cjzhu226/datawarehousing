@@ -2518,4 +2518,4 @@ usage: script [-aeFkpqr] [-t time] [file [command ...]]
 cooperzhu@Coopers-MacBook-Air Downloads % script output.txt
 
 Script started, output file is output.txt
-cooperzhu@Coopers-MacBook-Air Downloads %
+cooperzhu@Coopers-MacBook-Air Downloads %# Temporary change to force commit
